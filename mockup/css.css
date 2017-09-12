@@ -47,6 +47,9 @@ body {
 .menu a:visited {color: black;text-decoration: none;}   
 .menu a:hover {color: black;text-decoration: underline;}      
 .menu a:active {color: black;text-decoration: underline;}
+.tab{
+    overflow-x:auto;
+}
 tr:hover { 
     background: #f8f8f8; 
 }
@@ -73,7 +76,6 @@ td a:active {color: black;text-decoration: none;}
 .no-att{
     text-align: center;
 }
-
 @font-face {
     font-family: 'Roboto';
     src: url('subset-Roboto-Italic.eot');
@@ -114,7 +116,4 @@ td a:active {color: black;text-decoration: none;}
     font-weight: normal;
     font-style: normal;
 }
-fieldset{
-    border:0;
-    box-shadow: none;
-}
+
