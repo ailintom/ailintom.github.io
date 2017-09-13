@@ -4,51 +4,80 @@
         <title>Persons and Names of the Middle Kingdom</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="css.css">
+        <link href="css.css" rel="stylesheet" type="text/css" >
     </head>
     <body>
         <div class="header">
             <h1>Persons and Names of the Middle Kingdom</h1>
+            <h2>Search personal names</h2>
         </div>
         <div class="menu">
             <ul>
                 <li><a href=index.html>Personal names</a></li>
+                <li><a href=titles.html>Name types</a></li>
+                <li><a href=titles.html>Titles</a></li>
                 <li><a href=people.html>People</a></li>
-                <li><a href=about.html>Dossiers</a></li>
-                <li><a href=about.html>Inscribed objects</a></li>
+                <li><a href=inscriptions.html>Inscribed objects</a></li>
+                <li><a href=places.html>Places</a></li>
+                <li><a href=places.html>Collections</a></li>
                 <li><a href=about.html>Info</a></li>
                 <li><a href=impressum.html>Impressum</a></li>
             </ul>
         </div>
-        <div class="main">
-            <h2>Search personal names</h2>
-            Persons and Names of the Middle Kingdom is an online database of Egyptian Middle Kingdom personal names and their bearers. It includes data on personal names, people bearing names, written sources where people are attested, dossiers of persons attestated in different sources.
-            <h2>Search results</h2>
-            <div class="tab">
-            <table>
-                <tr>
-                    <td class="tabhead"><div> Personal name</div></td>
-                    <td class="tabhead"><div>Sex</div></td>
-                    <td class="tabhead"><div>Sources</div></td>
-                    <td class="tabhead"><div>Period</div></td>
-                    <td class="tabhead"><div>Area</div></td>
-                </tr>
-                <tr>
-                    <td><a href="/names/142606600"><div class="pn">jnpw-m-sꜣ⸗f</div></a></td>
-                    <td><a href="/names/142606600"><div class="sex">m</div></a></td>
-                    <td><a href="/names/142606600"><div class="no-att">1</div></a></td>
-                    <td><a href="/names/142606600"><div>early 12th Dyn.</div></a></td>
-                    <td><a href="/names/142606600"><div>&nbsp;</div></a></td>
-                </tr>
-                <tr>
-                    <td><a href="/names/142606570"><div class="pn">jnpw-m-sꜣ⸗s</div></a></td>
-                    <td><a href="/names/142606570"><div class="sex">f</div></a></td>
-                    <td><a href="/names/142606600"><div class="no-att">2</div></a></td>
-                    <td><a href="/names/142606600"><div>12th Dyn.</div></a></td>
-                    <td><a href="/names/142606600"><div>&nbsp;</div></a></td>
-                </tr>
-            </table>
+
+        <div class="column">
+            <h3>Enter the search terms</h3>
+            <form action="/index.php">
+
+                <label for="personal_name" class="input-label">Personal name:</label>
+                <span class="searchinput"><input type="text" name="personal_name" id="personal_name" value="" placeholder="MdC (ra-Htp) or Unicode (rꜥ-ḥtp)"></span>
+               
+                                <label for="translation"  class="input-label">Translation:</label>
+               <span class="searchinput"><input type="text" name="personal_name" id="translation" value="" placeholder="English translation"></span>
+               
+                <input type="radio" id="inexact" name="match" tabindex="-1" value="inexact" class="radio" checked> <label for="inexact" class="radiolabel"><span title="Matches any name containing the search term">contains</span></label>
+                <input type="radio" id="exact" name="match" tabindex="-1" value="exact" class="radio"> <label for="exact" class="radiolabel"><span title="Matches the name equal to the search term ">equals</span></label>
+                <input type="radio" id="startswith" name="match" tabindex="-1" value="startswith"  class="radio"> <label for="startswith" class="radiolabel"><span title="Matches the names beginning with the search term ">starts with</span></label>
+                <input type="radio" id="endswith" name="match" tabindex="-1" value="endswith" class="radio"> <label for="endswith" class="radiolabel"><span title="Matches the names ending with the search term ">ends with</span></label> the search value
+                <br>
+                <input type="submit" value="Search" title="Display personal names matching the search terms">
+            </form>
         </div>
+        <div class="main">
+
+
+            <h3>Search results</h3>
+            <div class="tab">
+                <table>
+                    <tr>
+                        <th><span class="t"> Personal name</span></th>
+                        <th><span class="t">Sex</span></th>
+                        <th><span class="t">Sources</span></th>
+                        <th><span class="t">Period</span></th>
+                        <th><span class="t">Area</span></th>
+                        <th><span class="t">Ranke, <i>PN</i></span></th>
+                        <th><span class="t">Translation</span></th>
+                    </tr>
+                    <tr>
+                        <td><a href="/names/142606600"><span class="pn">jnpw-m-sꜣ⸗f</span></a></td>
+                        <td class="sex"><a href="/names/142606600"><span class="t" title="male">m</span></a></td>
+                        <td class="no-att"><a href="/names/142606600"><span class="t">1</span></a></td>
+                        <td><a href="/names/142606600"><span class="t">early 12th Dyn.</span></a></td>
+                        <td><a href="/names/142606600"><span class="t">&nbsp;</span></a></td>
+                        <td><a href="/names/142606600"><span class="t">I&nbsp;37.12</span></a></td>
+                        <td><a href="/names/142606600"><span class="t">Anubis is his protection</span></a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="/names/142606570"><span class="pn">jnpw-m-sꜣ⸗s</span></a></td>
+                        <td  class="sex"><a href="/names/142606570"><span class="t" title="female">f</span></a></td>
+                        <td  class="no-att"><a href="/names/142606570"><span class="t">2</span></a></td>
+                        <td><a href="/names/142606570"><span class="t">12th Dyn.</span></a></td>
+                        <td><a href="/names/142606570"><span class="t">&nbsp;</span></a></td>
+                        <td><a href="/names/142606570"><span class="t">I&nbsp;37.13</span></a></td>
+                        <td><a href="/names/142606570"><span class="t">Anubis is her protection</span></a></td>
+                    </tr>
+                </table>
+            </div>
         </div>
     </body>
 </html>

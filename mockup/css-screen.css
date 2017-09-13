@@ -1,0 +1,81 @@
+.menu {
+    width: 17%;
+    float: left;
+    border: none ;
+    padding: 3px;
+}
+.column {
+    width: 83%;
+    float: left;
+    padding: 3px;
+    border: none;
+}
+.main {
+    border: none ;
+    padding: 6px;
+    clear: left;
+}
+
+@media only screen and (min-width: 598px) {
+    .menu a { display: block } 
+    .menu   li {
+
+        line-height:140%;
+
+    }
+    .menu ul li:nth-child(1) a{
+        padding-top:0.5ex; 
+    }
+    .menu ul li:nth-last-of-type(1) a{
+        padding-bottom:0.5ex; 
+    }
+}
+@media only screen and (max-width: 597px) {
+    .menu {
+        width: 100%;
+    }
+    .menu ul li {
+        display:inline ;
+        padding: 0.3ex;
+        line-height:160%;
+    }
+    .main {
+        width: 100%;
+    }
+}
+.menu  ul {
+    list-style-type: none;
+    padding: 0;
+}
+.menu   li {
+    background-color:#f0f0f0;
+    line-height:140%;
+
+}
+.menu a {
+    margin-left: 0.5ex;
+    margin-right: 0.5ex;}
+
+
+.menu a:link {color: black;text-decoration: none;}     
+.menu a:visited {color: black;text-decoration: none;}   
+.menu a:hover {color: black;text-decoration: underline;}      
+.menu a:active {color: black;text-decoration: underline;}
+.tab{
+    overflow-x:auto;
+}
+.tab table {
+    border-collapse: collapse;
+}
+tr:hover { 
+    background: #f3f3f3; 
+}
+td a { 
+    display: block; 
+    border: none;
+    padding: 1px; 
+}
+td a:link {color: black;text-decoration: none;}     
+td a:visited {color: black;text-decoration: none;}   
+td a:hover {color: black;text-decoration: none;}      
+td a:active {color: black;text-decoration: none;}

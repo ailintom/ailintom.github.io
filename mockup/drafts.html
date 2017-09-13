@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>drafts</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .comment {
+                display: none;
+            }
+
+            .gender:hover~.comment {
+                display: block;
+                position: absolute;
+                background-color:yellow;
+            }
+            #b {
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+
+            <table>
+                <tr><td>some text</td><td>some stuff</td><td>something else</td>
+                <tr><td>some text</td>
+                    <td>
+                        <div class="gender">m</div>
+                        <div class="comment">male</div>
+                    </td><td>other text</td>
+                </tr>
+                <td>some text</td><td>some stuff</td><td>something else</td>
+            </table>
+        
+
+        </div>
+    </body>
+</html>

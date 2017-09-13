@@ -1,68 +1,54 @@
+@import url("css-screen.css") screen, projection, tv;
+@import url("css-print.css") print;
 * {
     box-sizing: border-box;
+    margin-top: 0pt;
+    margin-bottom: 0pt;
 }
 body {
     font-family:Roboto, DejaVu Sans, sans-serif;
     font-size:medium;
+
 }
-.header {
+.header{
     border: none ;
     padding: 6px;
+    margin-top: 0pt;
+    margin-bottom: 0pt;
 }
-.menu {
-    width: 15%;
+h1{
+    margin-top: 0.25ex;
+    margin-bottom: 0ex;
+}
+h2{
+    margin-top: 0.25ex;
+    margin-bottom: 0ex;
+}
+h3{
+    margin-top: 0ex;
+    margin-bottom: 0.25ex;
+}
+.searchinput{
+        display: block;
+    overflow: hidden;
+    padding-left:1ex;
+    padding-bottom:0.25ex;
+     padding-top:0.25ex;
+}
+.searchinput input{
+    width: 100%;
+}
+.input-label{
     float: left;
-    border: none ;
-    padding: 3px;
+        padding-bottom:0.25ex;
+     padding-top:0.25ex;
 }
-.main {
-    width: 85%;
-    float: left;
-    padding: 3px;
-    border: none;
+.radiolabel {
+  color: grey;
 }
-@media only screen and (min-width: 598px) {
-    .menu a { display: block } 
+.radio:checked + .radiolabel {
+  color: black;
 }
-@media only screen and (max-width: 597px) {
-    .menu {
-        width: 100%;
-    }
-    .menu ul li {
-        display:inline ;
-    }
-    .main {
-        width: 100%;
-    }
-}
-.menu  ul {
-    list-style-type: none;
-    padding: 0;
-}
-.menu   li {
-    background-color:#f0f0f0;
-    padding: 3px;
-    line-height:150%;
-}
-.menu a:link {color: black;text-decoration: none;}     
-.menu a:visited {color: black;text-decoration: none;}   
-.menu a:hover {color: black;text-decoration: underline;}      
-.menu a:active {color: black;text-decoration: underline;}
-.tab{
-    overflow-x:auto;
-}
-tr:hover { 
-    background: #f3f3f3; 
-}
-td a { 
-    display: block; 
-    border: none;
-    padding: 1px; 
-}
-td a:link {color: black;text-decoration: none;}     
-td a:visited {color: black;text-decoration: none;}   
-td a:hover {color: black;text-decoration: none;}      
-td a:active {color: black;text-decoration: none;}
 .sex{
     font-style: italic;
     text-align: center;
@@ -70,9 +56,14 @@ td a:active {color: black;text-decoration: none;}
 .pn{
     font-style: normal;
 }
-.tabhead{
+
+.tab th{
     font-variant: small-caps;
     background-color:#f0f0f0;
+}
+.t, .pn, .sex, .noatt{
+    padding-left: 0.5ex;
+    padding-right: 0.5ex;
 }
 .no-att{
     text-align: center;

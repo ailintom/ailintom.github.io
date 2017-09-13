@@ -1,0 +1,24 @@
+ .menu, .menu * { display: none !important;}
+.column {
+    width: 100%;
+    clear: left;
+    padding: 3px;
+    border: none;
+}
+.main {
+    border: none ;
+    padding: 6px;
+    clear: left;
+}
+[type="submit"]{ display: none !important;}
+ 
+/*
+.tab tr:nth-child(even){
+     background-color: #f2f2f2 !important;
+     -webkit-print-color-adjust: exact; 
+}
+.tab tr:nth-child(odd){
+     background-color: #ffffff !important;
+     -webkit-print-color-adjust: exact; 
+}
+*/
