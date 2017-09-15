@@ -16,6 +16,15 @@
     clear: left;
 }
 
+/* Make the table with results part of the right column (right of the menu) if the window is wide enough. Otherwise it is placed under the menu. */
+@media only screen and (min-width: 1000px) {
+    .main { 
+        position: relative;
+        left: 17%;
+        width: 83% !important;
+    }
+}
+/*Display menu in the left column in wide windows*/
 @media only screen and (min-width: 598px) {
     .menu a { display: block } 
     .menu   li {
@@ -30,6 +39,7 @@
         padding-bottom:0.5ex; 
     }
 }
+/* Display menu on the top in narrow windows and smartphones */
 @media only screen and (max-width: 597px) {
     .menu {
         width: 100%;

@@ -66,13 +66,13 @@ h3{
     margin-bottom: 0.75ex;
 }
 h4{
-    margin-top: 0.25ex;
+    margin-top: 0.75ex;
     margin-bottom: 0.25ex;
     padding-left:5ex;
 }
 h4 img{
     height: 1.75em;
-    
+
 }
 .searchinput{
     display: block;
@@ -117,6 +117,25 @@ h4 img{
 .red{
     color:darkred;
 }
+.spellings ol {
+    margin:0px;
+    padding-left:1em;
+}
+.spellings ol li {
+    list-style-position: outside;
+}
+.biblio-ref a:link, .place a:link, .type a:link, .inscription a:link, .title a:link{
+    text-decoration:none;
+}
+.biblio-ref a:visited, .place a:visited, .type a:visited, .inscription a:visited, .title a:visited{
+    text-decoration:none;
+}
+.biblio-ref a:hover, .place a:hover, .type a:hover, .inscription a:hover, .title a:hover{
+    text-decoration:none;
+}
+.biblio-ref a:active, .place a:active, .type a:active, .inscription a:active, .title a:active{
+    text-decoration:none;
+}
 @font-face {
     font-family: 'Roboto';
     src: url('subset-Roboto-Italic.eot');
@@ -157,3 +176,4 @@ h4 img{
     font-weight: normal;
     font-style: normal;
 }
+
