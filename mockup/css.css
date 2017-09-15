@@ -5,6 +5,9 @@
     margin-top: 0pt;
     margin-bottom: 0pt;
 }
+a img {
+    border: 0;
+}
 html {
     position: relative;
     margin:0;
