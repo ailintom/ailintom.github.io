@@ -66,9 +66,9 @@ h3{
     margin-bottom: 0.75ex;
 }
 h4{
-    margin-top: 0.75ex;
+    margin-top: 1.75ex;
     margin-bottom: 0.25ex;
-    padding-left:5ex;
+    padding-left:6ex;
 }
 h4 img{
     height: 1.75em;
@@ -124,16 +124,16 @@ h4 img{
 .spellings ol li {
     list-style-position: outside;
 }
-.biblio-ref a:link, .place a:link, .type a:link, .inscription a:link, .title a:link{
+.name a:link, .biblio-ref a:link, .place a:link, .type a:link, .inscription a:link, .title a:link{
     text-decoration:none;
 }
-.biblio-ref a:visited, .place a:visited, .type a:visited, .inscription a:visited, .title a:visited{
+.name a:visited,.biblio-ref a:visited, .place a:visited, .type a:visited, .inscription a:visited, .title a:visited{
     text-decoration:none;
 }
-.biblio-ref a:hover, .place a:hover, .type a:hover, .inscription a:hover, .title a:hover{
+.name a:hover,.biblio-ref a:hover, .place a:hover, .type a:hover, .inscription a:hover, .title a:hover{
     text-decoration:none;
 }
-.biblio-ref a:active, .place a:active, .type a:active, .inscription a:active, .title a:active{
+.name a:active,.biblio-ref a:active, .place a:active, .type a:active, .inscription a:active, .title a:active{
     text-decoration:none;
 }
 @font-face {
