@@ -83,11 +83,32 @@ h4 img{
 }
 .searchinput input{
     width: 100%;
+
+}
+.optionsbeforesearchinput {
+    float: left;
+    padding-right: 1ex;
 }
 .input-label{
     float: left;
-    padding-bottom:0.25ex;
-    padding-top:0.25ex;
+
+}
+.controls{
+    width:100%;
+    display:table;
+}
+.left-controls{
+    text-align:left;
+    display:table-cell;
+}
+.mid-controls{
+    text-align:center;
+    display:table-cell;
+}
+
+.right-controls{
+    text-align:right;
+    display:table-cell;
 }
 .radiolabel {
     color: grey;
@@ -102,7 +123,9 @@ h4 img{
 .pn{
     font-style: normal;
 }
-
+.tab{
+    clear:left;
+}
 .tab th{
     font-variant: small-caps;
     background-color:#f0f0f0;
