@@ -31,7 +31,7 @@
 
             <div class="column">
                 <h3>Search terms</h3>
-                <form action="/index.php">
+                <form action="/index.php" method="get">
 
                     <label for="personal_name" class="input-label">Personal name:</label>
                     <span class="searchinput"><input type="text" name="personal_name" id="personal_name" value="" placeholder="MdC (ra-Htp) or Unicode (rꜥ-ḥtp)"></span>
@@ -166,8 +166,8 @@
                             <!--[if lte IE 9]></select><![endif]-->
                     </datalist>
 
-                    <span class="optionsbeforesearchinput"> Return the names that <input type="radio" id="period-characteristic" name="match-region" tabindex="-1" value="period-characteristic" class="radio" checked> <label for="period-characteristic" class="radiolabel"><span title="Match any name containing the search term">are attested in</span></label>
-                        <input type="radio" id="period-attested" name="match-region" tabindex="-1" value="period-attested" class="radio"> <label for="period-attested" class="radiolabel"><span title="Match any name equal to the search term ">are only attested in</span></label></span><label for="period" class="input-label"><span >the period&nbsp;</span></label> <span class="searchinput"><input type="text" id="period" name="period" list="periods" title="Enter the period" placeholder="Period or reign"></span> 
+                    <span class="optionsbeforesearchinput"> Return the names that <input type="radio" id="period-characteristic" name="match-date" tabindex="-1" value="period-characteristic" class="radio" checked> <label for="period-characteristic" class="radiolabel"><span title="Match any name containing the search term">are attested in</span></label>
+                        <input type="radio" id="period-attested" name="match-date" tabindex="-1" value="period-attested" class="radio"> <label for="period-attested" class="radiolabel"><span title="Match any name equal to the search term ">are only attested in</span></label></span><label for="period" class="input-label"><span >the period&nbsp;</span></label> <span class="searchinput"><input type="text" id="period" name="period" list="periods" title="Enter the period" placeholder="Period or reign"></span> 
 
                     <datalist id="periods">
                         <!--[if lte IE 9]><select data-datalist="periods"><![endif]-->
@@ -213,12 +213,13 @@
                         <option value="Sobekhotep IV">
                             <!--[if lte IE 9]></select><![endif]-->
                     </datalist>
-                    <label for="ranke" class="input-label"><span >Ranke number:</span></label> <span class="searchinput"><input type="text" id="ranke" name="ranke" title="Enter the Ranke entry number" placeholder="Example: I, 139.1"></span>                         
-                    Return <input type="radio" id="any" name="gender" tabindex="-1" value="any" class="radio" checked> <label for="any" class="radiolabel"><span title="Match names regardless of gender">names regardless of gender</span></label>
+                      Return <input type="radio" id="any" name="gender" tabindex="-1" value="any" class="radio" checked> <label for="any" class="radiolabel"><span title="Match names regardless of gender">names regardless of gender</span></label>
                     <input type="radio" id="female" name="gender" tabindex="-1" value="female" class="radio"> <label for="female" class="radiolabel"><span title="Match names borne only by women">female names</span></label>
                     <input type="radio" id="male" name="gender" tabindex="-1" value="male"  class="radio"> <label for="male" class="radiolabel"><span title="Match names borne only by men ">male names</span></label>
                     <input type="radio" id="both" name="gender" tabindex="-1" value="both"  class="radio"> <label for="both" class="radiolabel"><span title="Match names borne by both men and women">unisex names</span></label>
-                    <input type="radio" id="animal" name="gender" tabindex="-1" value="animal" class="radio"> <label for="animal" class="radiolabel"><span title="Match animal names">animal names</span></label>
+                    <input type="radio" id="animal" name="gender" tabindex="-1" value="animal" class="radio"> <label for="animal" class="radiolabel"><span title="Match animal names">animal names</span></label><br>
+                        <label for="ranke" class="input-label"><span >Ranke number:</span></label> <span class="searchinput"><input type="text" id="ranke" name="ranke" title="Enter the Ranke entry number" placeholder="Example: I, 139.1"></span>                         
+                  
                     <script src="datalist.polyfill.min.js"></script>
                     <br>
                     <input type="submit" value="Search" title="Display personal names matching the search terms">

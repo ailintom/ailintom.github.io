@@ -150,7 +150,9 @@ h4 img{
 .name a:link, .biblio-ref a:link, .place a:link, .type a:link, .inscription a:link, .title a:link{
     text-decoration:none;
 }
-
+.filter{
+    background-color: #f3f3f3;
+}
 .name a:hover,.biblio-ref a:hover, .place a:hover, .type a:hover, .inscription a:hover, .title a:hover{
     text-decoration:none;
 }
