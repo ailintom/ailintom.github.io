@@ -127,9 +127,7 @@ h4 img{
 .name a:link, .biblio-ref a:link, .place a:link, .type a:link, .inscription a:link, .title a:link{
     text-decoration:none;
 }
-.name a:visited,.biblio-ref a:visited, .place a:visited, .type a:visited, .inscription a:visited, .title a:visited{
-    text-decoration:none;
-}
+
 .name a:hover,.biblio-ref a:hover, .place a:hover, .type a:hover, .inscription a:hover, .title a:hover{
     text-decoration:none;
 }
