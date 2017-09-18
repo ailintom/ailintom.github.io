@@ -52,6 +52,10 @@
     .main {
         width: 100%;
     }
+    .column{
+        width:100%;
+        
+    }
 }
 .menu  ul {
     list-style-type: none;

@@ -80,6 +80,7 @@ h4 img{
     padding-left:1ex;
     padding-bottom:0.25ex;
     padding-top:0.25ex;
+    min-width: 10ex;
 }
 .searchinput input{
     width: 100%;
@@ -109,6 +110,12 @@ h4 img{
     width:1%;
     white-space:nowrap;
 }
+      .search-options-item50{
+        /*display: table-cell;*/
+          display: inline-block;
+  
+         width:50%;
+    }
 .controls{
     width:100%;
     display:table;
@@ -136,8 +143,8 @@ h4 img{
     font-style: italic;
     text-align: center;
 }
-.pn{
-    font-style: normal;
+.pn, .tit{
+    font-style: italic;
 }
 .tab{
     clear:left;
