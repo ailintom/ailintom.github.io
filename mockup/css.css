@@ -93,6 +93,22 @@ h4 img{
     float: left;
 
 }
+.search-options{
+    display: table;
+    table-layout: auto;
+    width:100%;
+    }
+    .search-options-group{
+        display: table-row;
+    }
+
+        .search-options-item{
+        display: table-cell;
+    }
+        .search-options-item:first-child{
+    width:1%;
+    white-space:nowrap;
+}
 .controls{
     width:100%;
     display:table;
@@ -147,18 +163,17 @@ h4 img{
 .spellings ol li {
     list-style-position: outside;
 }
-.name a:link, .biblio-ref a:link, .place a:link, .type a:link, .inscription a:link, .title a:link{
+.criterion a:link,.workshop a:link,.attestation a:link,.person a:link,.name a:link, .biblio-ref a:link, .place a:link, .type a:link, .inscription a:link, .title a:link{
     text-decoration:none;
 }
+ 
+
 .filter{
     background-color: #f3f3f3;
 }
-.name a:hover,.biblio-ref a:hover, .place a:hover, .type a:hover, .inscription a:hover, .title a:hover{
-    text-decoration:none;
-}
-.name a:active,.biblio-ref a:active, .place a:active, .type a:active, .inscription a:active, .title a:active{
-    text-decoration:none;
-}
+#filter{display:none}
+#filter:target{display:block}
+#filter:target + #show{display:none}
 @font-face {
     font-family: 'Roboto';
     src: url('subset-Roboto-Italic.eot');
