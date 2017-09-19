@@ -143,15 +143,23 @@ h4 img{
     font-style: italic;
     text-align: center;
 }
+.pn{
+    white-space: nowrap;
+}
 .pn, .tit{
     font-style: italic;
 }
 .tab{
     clear:left;
+    text-indent: 0px;
 }
 .tab th{
     font-variant: small-caps;
     background-color:#f0f0f0;
+}
+.tab table tr td, .tab table tr td{
+        padding-left: 0.5ex;
+    padding-right: 0.5ex;
 }
 .t, .pn, .gender, .noatt{
     padding-left: 0.5ex;
@@ -170,6 +178,9 @@ h4 img{
 .spellings ol li {
     list-style-position: outside;
 }
+.person{
+    background-color: #e0e0e0;
+}
 .criterion a:link,.workshop a:link,.attestation a:link,.person a:link,.name a:link, .biblio-ref a:link, .place a:link, .type a:link, .inscription a:link, .title a:link{
     text-decoration:none;
 }
@@ -178,9 +189,7 @@ h4 img{
 .filter{
     background-color: #f3f3f3;
 }
-#filter{display:none}
-#filter:target{display:block}
-#filter:target + #show{display:none}
+
 @font-face {
     font-family: 'Roboto';
     src: url('subset-Roboto-Italic.eot');
