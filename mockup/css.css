@@ -147,7 +147,8 @@ h4 img{
 }
 .input-label{
     float: left;
-    vertical-align:middle;
+    padding-left:0.3em;
+    
 }
 .search-options{
     display: table;
