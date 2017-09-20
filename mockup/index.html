@@ -13,7 +13,7 @@
         <div id="wrapper">
             <div class="header">
                 <h1><span class="red">P</span>ersons and <span class="red">N</span>ames of the <span class="red">M</span>iddle Kingdom</h1>
-                
+
             </div>
             <div class="menu">
                 <ul>
@@ -225,12 +225,44 @@
                                 <input type="radio" id="male" name="gender" tabindex="-1" value="male"  class="radio"> <label for="male" class="radiolabel"><span title="Match names borne only by men ">male names</span></label>
                                 <input type="radio" id="both" name="gender" tabindex="-1" value="both"  class="radio"> <label for="both" class="radiolabel"><span title="Match names borne by both men and women">unisex names</span></label>
                                 <input type="radio" id="animal" name="gender" tabindex="-1" value="animal" class="radio"> <label for="animal" class="radiolabel"><span title="Match animal names">animal names</span></label>
+
+
                             </div>
                         </div>
                     </div>
-                   <div class="short-field-block">
-                       <label for="ranke" class="input-label"><span >Ranke number:</span></label> <span class="searchinput"><input type="text" id="ranke" name="ranke" title="Enter the Ranke entry number" placeholder="Example: I, 139.1"></span>         
-                   </div>                
+                    <div class="short-field-block">
+                        <label for="ranke" class="input-label"><span >Ranke number:</span></label> <span class="searchinput"><input type="text" id="ranke" name="ranke" title="Enter the Ranke entry number" placeholder="Example: I, 139.1"></span>
+                        <label for="name-type-formal" class="input-label"><span >Name pattern:</span></label> <span class="searchinput"><input type="text" id="name-type-formal" name="name-type-formal" title="" placeholder="Example: DN (m)+ḥtp.w" list="name-types-formal" ></span>     
+                        <label for="name-type-sematic" class="input-label"><span >Semantic class:</span></label> <span class="searchinput"><input type="text" id="name-type-sematic" name="name-type-formal" title="" placeholder="Example: theophoric names" list="name-types-semantic" ></span>      
+
+                        <datalist id="name-types-formal">
+                            <!--[if lte IE 9]><select data-datalist="periods"><![endif]-->
+                            <option value="N-ꜥnḫ">
+                            <option value="N-jḳr">
+                            <option value="N-ḥr-ḥb">
+                            <option value="GN (f)-ḥtp.tj">
+                            <option value="ḥtp-GN (f)">
+                            <option value="GN-m-wsḫ.t">
+                            <option value="nfr.w-*">
+                            <option value="N-ms.w">
+                            <option value="N-snb.w">
+                            <option value="N-m-sꜣ⸗f/s">
+                                <!--[if lte IE 9]></select><![endif]-->
+                        </datalist>
+                        <datalist id="name-types-semantic">
+                            <!--[if lte IE 9]><select data-datalist="periods"><![endif]-->
+                            <option value="Names with ẖtjj">
+                            <option value="Names with ptḥ">
+                            <option value="Names with sbk">
+                            <option value="Names with jmn">
+                            <option value="Theophoric names">
+                            <option value="Basileophoric names">
+                            <option value="Endophoric name">
+                                <!--[if lte IE 9]></select><![endif]-->
+                        </datalist>
+
+
+                    </div>                
 
                     <script src="datalist.polyfill.min.js"></script>
                     <br>
