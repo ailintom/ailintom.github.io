@@ -85,30 +85,40 @@ h4 img{
     padding-left:1ex;
     padding-bottom:0.25ex;
     padding-top:0.25ex;
-    min-width: 4em;
+    min-width: 7em;
 }
 .searchinput input{
     width: 100%;
     display:inline-block;
 
-    min-width:10em;
+    min-width:6em;
 }
 .half-width-field-block{
     display:inline-block;
     
     min-width:11em;
-    
-    outline:3px solid white;
-    padding: 6px;
-    overflow: hidden;
     overflow:auto;
+}
+.full-width-field-block{
+    display:inline-block;
+    
+    min-width:11em;
+    width:100%;
+    overflow:auto;
+}
+.half-width-field-block input[type=text]{
+    min-width:4em;
 }
 
 .person-A{
     background-color: #f9f5b9;
+        outline:3px solid white;
+    padding: 6px;
 }
 .person-B{
     background-color: #f8edf3;
+        outline:3px solid white;
+    padding: 6px;
 }
 .half-width-field-block select{
    width:100%;
@@ -120,11 +130,15 @@ h4 img{
 
 .short-field-block{
 
-    max-width: 18em;
+    max-width: 19em;
 
 }
 .short-field-block input[type=text]{
-    min-width:5em;
+    min-width:6em;
+}
+
+.length input{
+    min-width:1em !important;
 }
 
 .optionsbeforesearchinput {
