@@ -35,221 +35,221 @@
                 <h3>Search terms</h3>
                 <form action="/index.php" method="get">
 
-                    <div class="half-width-field-block">
-                         
-                            <h4>Person A</h4>
-                            Gender: <input type="radio" id="Aany" name="Agender" tabindex="-1" value="any" class="radio" checked> <label for="Aany" class="radiolabel"><span title="Match names regardless of gender">any</span></label>
-                            <input type="radio" id="Afemale" name="Agender" tabindex="-1" value="female" class="radio"> <label for="Afemale" class="radiolabel"><span title="Match names borne only by women" class="gender">f</span></label>
-                            <input type="radio" id="Amale" name="Agender" tabindex="-1" value="male"  class="radio"> <label for="Amale" class="radiolabel"><span title="Match names borne only by men" class="gender">m</span></label><br>
+                    <div class="half-width-field-block person-A">
+
+                        <h4>Person A</h4>
+                        Gender: <input type="radio" id="Aany" name="Agender" tabindex="-1" value="any" class="radio" checked> <label for="Aany" class="radiolabel"><span title="Match names regardless of gender">any</span></label>
+                        <input type="radio" id="Afemale" name="Agender" tabindex="-1" value="female" class="radio"> <label for="Afemale" class="radiolabel"><span title="Match names borne only by women" class="gender">f</span></label>
+                        <input type="radio" id="Amale" name="Agender" tabindex="-1" value="male"  class="radio"> <label for="Amale" class="radiolabel"><span title="Match names borne only by men" class="gender">m</span></label><br>
 
 
-                            <label for="personal_nameA" class="input-label">Name:</label>
-                            <span class="searchinput"><input type="text" name="personal_nameA" id="personal_nameA" value="" placeholder="MdC (ra-Htp) or Unicode (rꜥ-ḥtp)">
-                            </span>
-                             <label for="Atitle" class="input-label">Title:</label>
-                            <span class="searchinput"><input type="text" name="Atitle" id="Btitle" value="" placeholder="MdC (ra-Htp) or Unicode (rꜥ-ḥtp)"></span>
-                    </div><div class="half-width-field-block">
-                        
-                            <h4>Person B</h4>
-                            Gender: <input type="radio" id="Bany" name="Bgender" tabindex="-1" value="any" class="radio" checked> <label for="Bany" class="radiolabel"><span title="Match names regardless of gender">any</span></label>
-                            <input type="radio" id="Bfemale" name="Bgender" tabindex="-1" value="female" class="radio"> <label for="Bfemale" class="radiolabel"><span title="Match names borne only by women" class="gender">f</span></label>
-                            <input type="radio" id="Bmale" name="Bgender" tabindex="-1" value="male"  class="radio"> <label for="Bmale" class="radiolabel"><span title="Match names borne only by men" class="gender">m</span></label><br>
-                            <label for="Bpersonal_name" class="input-label">Name:</label>
-                            <span class="searchinput"><input type="text" name="Bpersonal_name" id="Bpersonal_name" value="" placeholder="MdC (ra-Htp) or Unicode (rꜥ-ḥtp)"></span>
-                                    <label for="Btitle" class="input-label">Title:</label>
-                            <span class="searchinput"><input type="text" name="Btitle" id="Btitle" value="" placeholder="MdC (ra-Htp) or Unicode (rꜥ-ḥtp)"></span>
-                    </div>
-                                    <div class="controls">
-                    
-                    <div class="mid-controls">
-            
-                        <select name="relation" >
-                            <option value="same_inscription" SELECTED>A and B appear in the same source</option>
-                            <option value="child" >A is a child of B</option>
-                            <option value="parent" >A is a parent of B</option>
-                            <option value="spouses" >A and B are spouses</option>
-                            <option value="siblings" >A and B are siblings</option>
-                            </select>
-        </div>
-                </div>
-                           
-                                <span class="optionsbeforesearchinput">Geographic filter: <input type="radio" id="provenance" name="geo-filter" tabindex="-1" value="provenance" class="radio" checked> <label for="provenance" class="radiolabel"><span title="Attestations in sources found in the certain region">Provenance:</span></label>
-                            <input type="radio" id="installation-place" name="geo-filter" tabindex="-1" value="installation-place" class="radio"> <label for="installation-place" class="radiolabel"><span title="Attestations on monuments installed in certain region">Installation place</span></label>
-                            <input type="radio" id="origin" name="geo-filter" tabindex="-1" value="origin" class="radio"> <label for="origin" class="radiolabel"><span title="Attestations on monuments owned by people from a certain region">Origin</span></label>
-                            <input type="radio" id="production-place" name="geo-filter" tabindex="-1" value="production-place" class="radio"> <label for="production-place" class="radiolabel"><span title="Attestations on monuments produced in a certain refino">Production place</span></label>
-                            <input type="radio" id="all" name="geo-filter" tabindex="-1" value="all" class="radio"> <label for="all" class="radiolabel"><span title="Attestations in sources anyhow related to a certain region">All</span></label></span>
-                        <label for="place" class="input-label"><span>&nbsp;</span></label> <span class="searchinput"><input type="text" id="place" name="place" list="places" title="Enter the region" placeholder="Region or locality"></span> 
-                        <datalist id="places">
-                            <!--[if lte IE 9]><select data-datalist="places"><![endif]-->
-
-                            <option value="Elephantine">
-                            <option value="Aswan">
-                            <option value="Qubbet el-Hawa">
-                            <option value="Kom Ombo">
-                            <option value="Gebel el-Silsila">
-                            <option value="Edfu">
-                            <option value="Hierakonpolis">
-                            <option value="Elkab">
-                            <option value="Esna">
-                            <option value="Asfun">
-                            <option value="el-Moʿalla">
-                            <option value="Gebelein">
-                            <option value="Dakhla">
-                            <option value="Western Desert">
-                            <option value="el-Salmiya">
-                            <option value="Rizeikat">
-                            <option value="Tod">
-                            <option value="Armant">
-                            <option value="Karnak">
-                            <option value="Deir el-Bahri">
-                            <option value="Ramesseum">
-                            <option value="Southern Upper Egypt">
-                            <option value="Dra Abu el-Naga">
-                            <option value="Asasif">
-                            <option value="Sheikh Abd el-Qurna">
-                            <option value="SUE">
-                            <option value="Thebes">
-                            <option value="Deir el-Medina">
-                            <option value="Medinet Habu">
-                            <option value="Medamud">
-                            <option value="Naqada">
-                            <option value="Wadi el-Hôl">
-                            <option value="Wadi Hammamat">
-                            <option value="Khozam">
-                            <option value="Koptos">
-                            <option value="Hu">
-                            <option value="el-Ballas">
-                            <option value="Qena">
-                            <option value="Dendera">
-                            <option value="Sheikh Farag">
-                            <option value="Abydos">
-                            <option value="Thinis">
-                            <option value="Naga ed-Deir">
-                            <option value="Mersa Gawasis">
-                            <option value="Wadi Gawasis">
-                            <option value="Akhmim">
-                            <option value="Qau el-Kebir">
-                            <option value="Antaeopolis">
-                            <option value="Deir Rifa">
-                            <option value="Asyut">
-                            <option value="el-Atawla">
-                            <option value="Meir">
-                            <option value="Amarna">
-                            <option value="el-Bersha">
-                            <option value="Beni Hasan">
-                            <option value="Gebel Zeit">
-                            <option value="Behnessa">
-                            <option value="Serabit el-Khadim">
-                            <option value="Rod el-Air">
-                            <option value="Sedment">
-                            <option value="Herakleopolis">
-                            <option value="Gurob">
-                            <option value="Haraga">
-                            <option value="Lahun">
-                            <option value="Abusir el-Meleq">
-                            <option value="Hawara">
-                            <option value="Kiman Faris">
-                            <option value="Medinet el-Faiyum">
-                            <option value="Faiyum">
-                            <option value="Meidum">
-                            <option value="Atfih">
-                            <option value="el-Riqqa">
-                            <option value="Kafr Ammar">
-                            <option value="NUELE">
-                            <option value="Northern Upper Egypt or Lower Egypt">
-                            <option value="MFR">
-                            <option value="Lisht">
-                            <option value="Dahshur">
-                            <option value="Memphis">
-                            <option value="Mit Rahina">
-                            <option value="Saqqara">
-                            <option value="Abusir">
-                            <option value="Ayn Sukhna">
-                            <option value="Giza">
-                            <option value="Tura">
-                            <option value="Matariya">
-                            <option value="Heliopolis">
-                            <option value="Wadi el-Anqabiya el-Rawyana">
-                            <option value="Qattah">
-                            <option value="Shibin El Qanatir">
-                            <option value="Bubastis">
-                            <option value="Bilbeis">
-                            <option value="Athribis">
-                            <option value="Tell el-Yahudiya">
-                            <option value="Shibin El Kom">
-                            <option value="Tell el-Rataba">
-                            <option value="Maskhuta">
-                            <option value="Zagazig">
-                            <option value="Hihya">
-                            <option value="Leontopolis">
-                            <option value="Tukh el-Qaramus">
-                            <option value="Tell Basta">
-                            <option value="Tanta">
-                            <option value="Tell el-Dabʿa">
-                            <option value="Ezbet Rushdi">
-                            <option value="Kom el-Hisn">
-                            <option value="Qantir">
-                            <option value="Kom Firin">
-                            <option value="Tell el-Habua">
-                            <option value="Tell Dafana">
-                            <option value="Mendes">
-                            <option value="Kom el-Shatayin">
-                            <option value="Lower Egypt">
-                            <option value="Tell el-Faraʿin">
-                                <!--[if lte IE 9]></select><![endif]-->
-                        </datalist> 
-
-                        <span class="optionsbeforesearchinput">Chronological filter: <input type="radio" id="during" name="chrono-filter" tabindex="-1" value="during" class="radio" checked> <label for="during" class="radiolabel"><span title="Attestations in sources beloging to a certain period">During</span></label>
-                            <input type="radio" id="not-later" name="chrono-filter" tabindex="-1" value="not-later" class="radio"> <label for="not-later" class="radiolabel"><span title="Attestations in sources dating not (demonstrably) later than">Not later than</span></label>
-                            <input type="radio" id="not-earlier" name="chrono-filter" tabindex="-1" value="not-earlier" class="radio"> <label for="not-earlier" class="radiolabel"><span title="Attestations in sources dating not (demonstrably) earlier than">Not earlier than</span></label>
-
+                        <label for="personal_nameA" class="input-label">Name:</label>
+                        <span class="searchinput"><input type="text" name="personal_nameA" id="personal_nameA" value="" placeholder="MdC (ra-Htp) or Unicode (rꜥ-ḥtp)">
                         </span>
-                        <label for="period" class="input-label"><span >the period&nbsp;</span></label> <span class="searchinput"><input type="text" id="period" name="period" list="periods" title="Enter the period" placeholder="Period or reign"></span> 
+                        <label for="Atitle" class="input-label">Title:</label>
+                        <span class="searchinput"><input type="text" name="Atitle" id="Atitle" value="" placeholder="MdC (jmj-rA pr) or Unicode (jmj-rꜣ pr)"></span>
 
-                        <datalist id="periods">
-                            <!--[if lte IE 9]><select data-datalist="periods"><![endif]-->
-                            <option value="12th Dyn.">
-                            <option value="13th Dyn.">
-                            <option value="13th Dyn., Amenemhat Sonbef and Senebsumai">
-                            <option value="13th Dyn., Ankhu">
-                            <option value="13th Dyn., ca. Senbi">
-                            <option value="13th Dyn., not earlier than Khendjer">
-                            <option value="13th Dyn., Senbi">
-                            <option value="13th Dyn., Senebsumai and Senbi">
-                            <option value="13th Dyn., Senebsumai">
-                            <option value="14th-15th Dyn.">
-                            <option value="Am. III">
-                            <option value="Am. III–IV">
-                            <option value="Am. IV">
-                            <option value="Am. IV–early 13th Dyn.">
-                            <option value="Amenhotep III">
-                            <option value="Ameny Qemau">
-                            <option value="early 12th Dyn.">
-                            <option value="early Middle Kingdom">
-                            <option value="Khendjer">
-                            <option value="late 12th Dyn.">
-                            <option value="late 12th Dyn.–early 13th Dyn.">
-                            <option value="late 13th Dyn. or the SIP">
-                            <option value="late 13th Dyn.">
-                            <option value="late 13th Dyn.–Dyn. XVI">
-                            <option value="late 13th Dyn.–Dyn. XVII">
-                            <option value="mid- to late 12th Dyn.">
-                            <option value="mid- to late 13th Dyn.">
-                            <option value="Neferhotep I">
-                            <option value="Neferhotep I–Sobekhotep IV">
-                            <option value="not later than the 12th Dyn.">
-                            <option value="Sen. I or III">
-                            <option value="Sen. I">
-                            <option value="Sen. III">
-                            <option value="Sen. III–Am. III">
-                            <option value="SIP">
-                            <option value="Sob. III">
-                            <option value="Sob. IV or later">
-                            <option value="Sob. IV">
-                            <option value="Sobekhotep IV">
-                                <!--[if lte IE 9]></select><![endif]-->
-                        </datalist>
-                    <input type="checkbox" id="only_persons" name="only_persons" tabindex="-1" value="true" class="radio"> <label for="only_persons" class="radiolabel"><span title="Only show dossiers of persons with multiple attestations">Only show dossiers of persons with multiple attestations</span></label>
+                    </div><div class="half-width-field-block person-B">
+                        <h4>Person B</h4>
+                        Gender: <input type="radio" id="Bany" name="Bgender" tabindex="-1" value="any" class="radio" checked> <label for="Bany" class="radiolabel"><span title="Match names regardless of gender">any</span></label>
+                        <input type="radio" id="Bfemale" name="Bgender" tabindex="-1" value="female" class="radio"> <label for="Bfemale" class="radiolabel"><span title="Match names borne only by women" class="gender">f</span></label>
+                        <input type="radio" id="Bmale" name="Bgender" tabindex="-1" value="male"  class="radio"> <label for="Bmale" class="radiolabel"><span title="Match names borne only by men" class="gender">m</span></label><br>
+                        <label for="Bpersonal_name" class="input-label">Name:</label>
+                        <span class="searchinput"><input type="text" name="Bpersonal_name" id="Bpersonal_name" value="" placeholder="MdC (ra-Htp) or Unicode (rꜥ-ḥtp)"></span>
+                        <label for="Btitle" class="input-label">Title:</label>
+                        <span class="searchinput"><input type="text" name="Btitle" id="Btitle" value="" placeholder="MdC (jmj-rA pr) or Unicode (jmj-rꜣ pr)"></span>
+                    </div>
+                    <div class="controls">
+
+                        <div class="mid-controls">
+
+                            <select name="relation" >
+                                <option value="same_inscription" SELECTED>A and B appear in the same source</option>
+                                <option value="child" >A is a child of B</option>
+                                <option value="parent" >A is a parent of B</option>
+                                <option value="spouses" >A and B are spouses</option>
+                                <option value="siblings" >A and B are siblings</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <span class="optionsbeforesearchinput">Geographic filter: <input type="radio" id="provenance" name="geo-filter" tabindex="-1" value="provenance" class="radio" checked> <label for="provenance" class="radiolabel"><span title="Attestations in sources found in the certain region">Provenance:</span></label>
+                        <input type="radio" id="installation-place" name="geo-filter" tabindex="-1" value="installation-place" class="radio"> <label for="installation-place" class="radiolabel"><span title="Attestations on monuments installed in certain region">Installation place</span></label>
+                        <input type="radio" id="origin" name="geo-filter" tabindex="-1" value="origin" class="radio"> <label for="origin" class="radiolabel"><span title="Attestations on monuments owned by people from a certain region">Origin</span></label>
+                        <input type="radio" id="production-place" name="geo-filter" tabindex="-1" value="production-place" class="radio"> <label for="production-place" class="radiolabel"><span title="Attestations on monuments produced in a certain refino">Production place</span></label>
+                        <input type="radio" id="all" name="geo-filter" tabindex="-1" value="all" class="radio"> <label for="all" class="radiolabel"><span title="Attestations in sources anyhow related to a certain region">All</span></label></span>
+                    <label for="place" class="input-label"><span>&nbsp;</span></label> <span class="searchinput"><input type="text" id="place" name="place" list="places" title="Enter the region" placeholder="Region or locality"></span> 
+                    <datalist id="places">
+                        <!--[if lte IE 9]><select data-datalist="places"><![endif]-->
+
+                        <option value="Elephantine">
+                        <option value="Aswan">
+                        <option value="Qubbet el-Hawa">
+                        <option value="Kom Ombo">
+                        <option value="Gebel el-Silsila">
+                        <option value="Edfu">
+                        <option value="Hierakonpolis">
+                        <option value="Elkab">
+                        <option value="Esna">
+                        <option value="Asfun">
+                        <option value="el-Moʿalla">
+                        <option value="Gebelein">
+                        <option value="Dakhla">
+                        <option value="Western Desert">
+                        <option value="el-Salmiya">
+                        <option value="Rizeikat">
+                        <option value="Tod">
+                        <option value="Armant">
+                        <option value="Karnak">
+                        <option value="Deir el-Bahri">
+                        <option value="Ramesseum">
+                        <option value="Southern Upper Egypt">
+                        <option value="Dra Abu el-Naga">
+                        <option value="Asasif">
+                        <option value="Sheikh Abd el-Qurna">
+                        <option value="SUE">
+                        <option value="Thebes">
+                        <option value="Deir el-Medina">
+                        <option value="Medinet Habu">
+                        <option value="Medamud">
+                        <option value="Naqada">
+                        <option value="Wadi el-Hôl">
+                        <option value="Wadi Hammamat">
+                        <option value="Khozam">
+                        <option value="Koptos">
+                        <option value="Hu">
+                        <option value="el-Ballas">
+                        <option value="Qena">
+                        <option value="Dendera">
+                        <option value="Sheikh Farag">
+                        <option value="Abydos">
+                        <option value="Thinis">
+                        <option value="Naga ed-Deir">
+                        <option value="Mersa Gawasis">
+                        <option value="Wadi Gawasis">
+                        <option value="Akhmim">
+                        <option value="Qau el-Kebir">
+                        <option value="Antaeopolis">
+                        <option value="Deir Rifa">
+                        <option value="Asyut">
+                        <option value="el-Atawla">
+                        <option value="Meir">
+                        <option value="Amarna">
+                        <option value="el-Bersha">
+                        <option value="Beni Hasan">
+                        <option value="Gebel Zeit">
+                        <option value="Behnessa">
+                        <option value="Serabit el-Khadim">
+                        <option value="Rod el-Air">
+                        <option value="Sedment">
+                        <option value="Herakleopolis">
+                        <option value="Gurob">
+                        <option value="Haraga">
+                        <option value="Lahun">
+                        <option value="Abusir el-Meleq">
+                        <option value="Hawara">
+                        <option value="Kiman Faris">
+                        <option value="Medinet el-Faiyum">
+                        <option value="Faiyum">
+                        <option value="Meidum">
+                        <option value="Atfih">
+                        <option value="el-Riqqa">
+                        <option value="Kafr Ammar">
+                        <option value="NUELE">
+                        <option value="Northern Upper Egypt or Lower Egypt">
+                        <option value="MFR">
+                        <option value="Lisht">
+                        <option value="Dahshur">
+                        <option value="Memphis">
+                        <option value="Mit Rahina">
+                        <option value="Saqqara">
+                        <option value="Abusir">
+                        <option value="Ayn Sukhna">
+                        <option value="Giza">
+                        <option value="Tura">
+                        <option value="Matariya">
+                        <option value="Heliopolis">
+                        <option value="Wadi el-Anqabiya el-Rawyana">
+                        <option value="Qattah">
+                        <option value="Shibin El Qanatir">
+                        <option value="Bubastis">
+                        <option value="Bilbeis">
+                        <option value="Athribis">
+                        <option value="Tell el-Yahudiya">
+                        <option value="Shibin El Kom">
+                        <option value="Tell el-Rataba">
+                        <option value="Maskhuta">
+                        <option value="Zagazig">
+                        <option value="Hihya">
+                        <option value="Leontopolis">
+                        <option value="Tukh el-Qaramus">
+                        <option value="Tell Basta">
+                        <option value="Tanta">
+                        <option value="Tell el-Dabʿa">
+                        <option value="Ezbet Rushdi">
+                        <option value="Kom el-Hisn">
+                        <option value="Qantir">
+                        <option value="Kom Firin">
+                        <option value="Tell el-Habua">
+                        <option value="Tell Dafana">
+                        <option value="Mendes">
+                        <option value="Kom el-Shatayin">
+                        <option value="Lower Egypt">
+                        <option value="Tell el-Faraʿin">
+                            <!--[if lte IE 9]></select><![endif]-->
+                    </datalist> 
+
+                    <span class="optionsbeforesearchinput">Chronological filter: <input type="radio" id="during" name="chrono-filter" tabindex="-1" value="during" class="radio" checked> <label for="during" class="radiolabel"><span title="Attestations in sources beloging to a certain period">During</span></label>
+                        <input type="radio" id="not-later" name="chrono-filter" tabindex="-1" value="not-later" class="radio"> <label for="not-later" class="radiolabel"><span title="Attestations in sources dating not (demonstrably) later than">Not later than</span></label>
+                        <input type="radio" id="not-earlier" name="chrono-filter" tabindex="-1" value="not-earlier" class="radio"> <label for="not-earlier" class="radiolabel"><span title="Attestations in sources dating not (demonstrably) earlier than">Not earlier than</span></label>
+
+                    </span>
+                    <label for="period" class="input-label"><span >the period&nbsp;</span></label> <span class="searchinput"><input type="text" id="period" name="period" list="periods" title="Enter the period" placeholder="Period or reign"></span> 
+
+                    <datalist id="periods">
+                        <!--[if lte IE 9]><select data-datalist="periods"><![endif]-->
+                        <option value="12th Dyn.">
+                        <option value="13th Dyn.">
+                        <option value="13th Dyn., Amenemhat Sonbef and Senebsumai">
+                        <option value="13th Dyn., Ankhu">
+                        <option value="13th Dyn., ca. Senbi">
+                        <option value="13th Dyn., not earlier than Khendjer">
+                        <option value="13th Dyn., Senbi">
+                        <option value="13th Dyn., Senebsumai and Senbi">
+                        <option value="13th Dyn., Senebsumai">
+                        <option value="14th-15th Dyn.">
+                        <option value="Am. III">
+                        <option value="Am. III–IV">
+                        <option value="Am. IV">
+                        <option value="Am. IV–early 13th Dyn.">
+                        <option value="Amenhotep III">
+                        <option value="Ameny Qemau">
+                        <option value="early 12th Dyn.">
+                        <option value="early Middle Kingdom">
+                        <option value="Khendjer">
+                        <option value="late 12th Dyn.">
+                        <option value="late 12th Dyn.–early 13th Dyn.">
+                        <option value="late 13th Dyn. or the SIP">
+                        <option value="late 13th Dyn.">
+                        <option value="late 13th Dyn.–Dyn. XVI">
+                        <option value="late 13th Dyn.–Dyn. XVII">
+                        <option value="mid- to late 12th Dyn.">
+                        <option value="mid- to late 13th Dyn.">
+                        <option value="Neferhotep I">
+                        <option value="Neferhotep I–Sobekhotep IV">
+                        <option value="not later than the 12th Dyn.">
+                        <option value="Sen. I or III">
+                        <option value="Sen. I">
+                        <option value="Sen. III">
+                        <option value="Sen. III–Am. III">
+                        <option value="SIP">
+                        <option value="Sob. III">
+                        <option value="Sob. IV or later">
+                        <option value="Sob. IV">
+                        <option value="Sobekhotep IV">
+                            <!--[if lte IE 9]></select><![endif]-->
+                    </datalist>
+                    <input type="checkbox" id="only_persons" name="only_persons" tabindex="-1" value="true" class="radio"> <label for="only_persons" ><span title="Only show dossiers of persons with multiple attestations">Only show dossiers of persons with multiple attestations</span></label>
 
                     <script src="datalist.polyfill.min.js"></script>
                     <br>
@@ -265,493 +265,74 @@
                 <h3>Search results</h3>
                 <div class="controls">
                     <div class="left-controls"><a href="./index.php?...&amp;startat=1">First</a>&nbsp;<a href="./index.php?...&amp;startat=1">Prev 50</a> </div>
-                    <div class="mid-controls">Displaying names 41-60 out of totally 150</div>
+                    <div class="mid-controls">Displaying people 1–4 out of totally 4</div>
                     <div class="right-controls"><a href="./index.php?...&amp;startat=n-61">Next 50</a>&nbsp;<a href="./index.php?...&amp;startat=141">Last</a> </div>
                 </div>
                 <div class="tab">
                     <table>
                         <tr>
-                            <th>Personal name</th>
-                            <th>Gender</th>
-                            <th><span class="t" title="Number of attestations">Atts.</th>
-                            <th>Period</th>
-                            <th>Area</th>
-                            <th>Ranke, <i>PN</i></th>
-                            <th>Translation</th>
+                            <th class="person-A" title="Gender A">&nbsp;</th>
+                            <th class="person-A">Title A</th>
+                            <th class="person-A">Name A</th>
+                            <th class="person-B" title="Gender B">&nbsp;</th>
+                            <th class="person-B">Title B</th>
+                            <th class="person-B" >Name B</th>    
+                            <th>Source or dossier</th>
+                            <th>Date</th>
+                            <th>Region</th>
                         </tr>
                         <tr>
-                            <td class="pn"><a href="./name/142606600">jnpw-m-sꜣ⸗f</a></td>
-                            <td class="gender"  title="male"><a href="./name/142606600">m</a></td>
-                            <td class="no-att"><a href="./name/142606600">1</a></td>
-                            <td><a href="./name/142606600">early 12th Dyn.</a></td>
-                            <td><a href="./name/142606600">&nbsp;</a></td>
-                            <td><a href="./name/142606600">I&nbsp;37.12</a></td>
-                            <td><a href="./name/142606600">Anubis is his protection</a></td>
+                            <td class="gender person-A"  title="male"><a href="./attestation/67131355">m</a></td>
+                            <td class="tit person-A"><a href="./attestation/67131355">ꜥḥꜥ.w</a></td>
+                            <td class="pn person-A"><a href="./name/142606600">rn(⸗j)-snb.w</a></td>
+                            <td class="gender person-B"  title="female"><a href="./attestation/67131355">f</a></td>
+                            <td class="tit person-B"><a href="./attestation/67131355">nb.t pr</a></td>
+                            <td class="pn person-B"><a href="./attestation/67131355">ḥn.wt</a></td>
+                            <td><a href="./attestation/67131355">Stela München Gl. WAF 34</a></td>
+                            <td><a href="./attestation/67131355">13th Dyn.</a></td>
+                            <td><a href="./attestation/67131355">MFR (origin)</a></td>
                         </tr>
+                                       <tr>
+                            <td class="gender person-A"  title="male"><a href="./attestation/33554888">m</a></td>
+                            <td class="tit person-A"><a href="./attestation/33554888">jm.j-rꜣ pr</a></td>
+                            <td class="pn person-A"><a href="./attestation/33554888">rn(⸗j)-snb.w-wr</a></td>
+                            <td class="gender person-B"  title="female"><a href="./attestation/33554888">f</a></td>
+                            <td class="tit person-B"><a href="./attestation/33554888">&nbsp;</a></td>
+                            <td class="pn person-B"><a href="./attestation/33554888">ḥn.wt</a></td>
+                            <td><a href="./attestation/33554888">Stela Fitzwilliam E.59.1926</a></td>
+                            <td><a href="./attestation/33554888">13th Dyn.</a></td>
+                            <td><a href="./attestation/33554888">Thebes (origin)</a></td>
+                        </tr>
+     
                         <tr>
-                            <td class="pn"><a href="./name/142606570">jnpw-m-sꜣ⸗s</a></td>
-                            <td  class="gender"  title="female"><a href="./name/142606570">f</a></td>
-                            <td  class="no-att"><a href="./name/142606570">2</a></td>
-                            <td><a href="./name/142606570">12th Dyn.</a></td>
-                            <td><a href="./name/142606570">&nbsp;</a></td>
-                            <td><a href="./name/142606570">I&nbsp;37.13</a></td>
-                            <td><a href="./name/142606570">Anubis is her protection</a></td>
+                            <td class="gender person-A"  title="male"><a href="./person/67112920">m</a></td>
+                            <td class="tit person-A"><a href="./person/67112920">ḫtm.w-bj.tj; jm.j-rꜣ gs-pr</a></td>
+                            <td class="pn person-A"><a href="./person/67112920">rn(⸗j)-snb.w</a></td>
+                            <td class="gender person-B"  title="female"><a href="./person/67112920">f</a></td>
+                            <td class="tit person-B"><a href="./person/67112920">&nbsp;</a></td>
+                            <td class="pn person-B"><a href="./person/67112920">ḥn.wt</a></td>
+                            <td><a href="./person/67112920">Dossier <span class="person">rn(⸗j)-snb.w-7</span> (3 sources)</a></td>
+                            <td><a href="./person/67112920">13th Dyn.</a></td>
+                            <td><a href="./person/67112920">&nbsp;</a></td>
                         </tr>
-                        <tr>
-                            <td class="pn"><a href="./name/142606605.html">ptḥ-wnn⸗f</a></td>
-                            <td  class="gender"  title="both genders"><a href="./name/142606605.html">both</a></td>
-                            <td  class="no-att"><a href="./name/142606605.html">12</a></td>
-                            <td><a href="./name/142606605.html">early 12th–mid-13th Dyn.</a></td>
-                            <td title="Memphis-Faiyum Region"><a href="./name/142606605.html">MFR</a></td>
-                            <td><a href="./name/142606605.html">I&nbsp;139.3–4</a></td>
-                            <td><a href="./name/142606605.html">Ptah exists</a></td>
+                                     <tr>
+                            <td class="gender person-A"  title="male"><a href="./person/67131976">m</a></td>
+                            <td class="tit person-A"><a href="./person/67131976">jm.j-rꜣ pr; sš</a></td>
+                            <td class="pn person-A"><a href="./person/67131976">rn(⸗j)-snb.w</a></td>
+                            <td class="gender person-B"  title="female"><a href="./person/67131976">f</a></td>
+                            <td class="tit person-B"><a href="./person/67131976">&nbsp;</a></td>
+                            <td class="pn person-B"><a href="./person/67131976">ḥn.wt</a></td>
+                            <td><a href="./person/67131976">Dossier <span class="person">rn(⸗j)-snb.w-12</span> (2 sources)</a></td>
+                            <td><a href="./person/67131976">13th Dyn.</a></td>
+                            <td><a href="./person/67131976">Thebes</a></td>
                         </tr>
-                        <tr>
-                            <td class="pn"><a href="./name/142606605.html">ptḥ-wnn⸗f</a></td>
-                            <td  class="gender"  title="both genders"><a href="./name/142606605.html">both</a></td>
-                            <td  class="no-att"><a href="./name/142606605.html">12</a></td>
-                            <td><a href="./name/142606605.html">early 12th–mid-13th Dyn.</a></td>
-                            <td title="Memphis-Faiyum Region"><a href="./name/142606605.html">MFR</a></td>
-                            <td><a href="./name/142606605.html">I&nbsp;139.3–4</a></td>
-                            <td><a href="./name/142606605.html">Ptah exists</a></td>
-                        </tr>                      <tr>
-                            <td class="pn"><a href="./name/142606605.html">ptḥ-wnn⸗f</a></td>
-                            <td  class="gender"  title="both genders"><a href="./name/142606605.html">both</a></td>
-                            <td  class="no-att"><a href="./name/142606605.html">12</a></td>
-                            <td><a href="./name/142606605.html">early 12th–mid-13th Dyn.</a></td>
-                            <td title="Memphis-Faiyum Region"><a href="./name/142606605.html">MFR</a></td>
-                            <td><a href="./name/142606605.html">I&nbsp;139.3–4</a></td>
-                            <td><a href="./name/142606605.html">Ptah exists</a></td>
-                        </tr>
-                        <tr>
-                            <td class="pn"><a href="./name/142606605.html">ptḥ-wnn⸗f</a></td>
-                            <td  class="gender"  title="both genders"><a href="./name/142606605.html">both</a></td>
-                            <td  class="no-att"><a href="./name/142606605.html">12</a></td>
-                            <td><a href="./name/142606605.html">early 12th–mid-13th Dyn.</a></td>
-                            <td title="Memphis-Faiyum Region"><a href="./name/142606605.html">MFR</a></td>
-                            <td><a href="./name/142606605.html">I&nbsp;139.3–4</a></td>
-                            <td><a href="./name/142606605.html">Ptah exists</a></td>
-                        </tr>
-                        <tr>
-                            <td class="pn"><a href="./name/142606605.html">ptḥ-wnn⸗f</a></td>
-                            <td  class="gender"  title="both genders"><a href="./name/142606605.html">both</a></td>
-                            <td  class="no-att"><a href="./name/142606605.html">12</a></td>
-                            <td><a href="./name/142606605.html">early 12th–mid-13th Dyn.</a></td>
-                            <td title="Memphis-Faiyum Region"><a href="./name/142606605.html">MFR</a></td>
-                            <td><a href="./name/142606605.html">I&nbsp;139.3–4</a></td>
-                            <td><a href="./name/142606605.html">Ptah exists</a></td>
-                        </tr>
-                        <tr>
-                            <td class="pn"><a href="./name/142606605.html">ptḥ-wnn⸗f</a></td>
-                            <td  class="gender"  title="both genders"><a href="./name/142606605.html">both</a></td>
-                            <td  class="no-att"><a href="./name/142606605.html">12</a></td>
-                            <td><a href="./name/142606605.html">early 12th–mid-13th Dyn.</a></td>
-                            <td title="Memphis-Faiyum Region"><a href="./name/142606605.html">MFR</a></td>
-                            <td><a href="./name/142606605.html">I&nbsp;139.3–4</a></td>
-                            <td><a href="./name/142606605.html">Ptah exists</a></td>
-                        </tr>
-                        <tr>
-                            <td class="pn"><a href="./name/142606605.html">ptḥ-wnn⸗f</a></td>
-                            <td  class="gender"  title="both genders"><a href="./name/142606605.html">both</a></td>
-                            <td  class="no-att"><a href="./name/142606605.html">12</a></td>
-                            <td><a href="./name/142606605.html">early 12th–mid-13th Dyn.</a></td>
-                            <td title="Memphis-Faiyum Region"><a href="./name/142606605.html">MFR</a></td>
-                            <td><a href="./name/142606605.html">I&nbsp;139.3–4</a></td>
-                            <td><a href="./name/142606605.html">Ptah exists</a></td>
-                        </tr>
-                        <tr>
-                            <td class="pn"><a href="./name/142606605.html">ptḥ-wnn⸗f</a></td>
-                            <td  class="gender"  title="both genders"><a href="./name/142606605.html">both</a></td>
-                            <td  class="no-att"><a href="./name/142606605.html">12</a></td>
-                            <td><a href="./name/142606605.html">early 12th–mid-13th Dyn.</a></td>
-                            <td title="Memphis-Faiyum Region"><a href="./name/142606605.html">MFR</a></td>
-                            <td><a href="./name/142606605.html">I&nbsp;139.3–4</a></td>
-                            <td><a href="./name/142606605.html">Ptah exists</a></td>
-                        </tr>
-                        <tr>
-                            <td class="pn"><a href="./name/142606605.html">ptḥ-wnn⸗f</a></td>
-                            <td  class="gender"  title="both genders"><a href="./name/142606605.html">both</a></td>
-                            <td  class="no-att"><a href="./name/142606605.html">12</a></td>
-                            <td><a href="./name/142606605.html">early 12th–mid-13th Dyn.</a></td>
-                            <td title="Memphis-Faiyum Region"><a href="./name/142606605.html">MFR</a></td>
-                            <td><a href="./name/142606605.html">I&nbsp;139.3–4</a></td>
-                            <td><a href="./name/142606605.html">Ptah exists</a></td>
-                        </tr>
-                        <tr>
-                            <td class="pn"><a href="./name/142606605.html">ptḥ-wnn⸗f</a></td>
-                            <td  class="gender"  title="both genders"><a href="./name/142606605.html">both</a></td>
-                            <td  class="no-att"><a href="./name/142606605.html">12</a></td>
-                            <td><a href="./name/142606605.html">early 12th–mid-13th Dyn.</a></td>
-                            <td title="Memphis-Faiyum Region"><a href="./name/142606605.html">MFR</a></td>
-                            <td><a href="./name/142606605.html">I&nbsp;139.3–4</a></td>
-                            <td><a href="./name/142606605.html">Ptah exists</a></td>
-                        </tr>
-                        <tr>
-                            <td class="pn"><a href="./name/142606605.html">ptḥ-wnn⸗f</a></td>
-                            <td  class="gender"  title="both genders"><a href="./name/142606605.html">both</a></td>
-                            <td  class="no-att"><a href="./name/142606605.html">12</a></td>
-                            <td><a href="./name/142606605.html">early 12th–mid-13th Dyn.</a></td>
-                            <td title="Memphis-Faiyum Region"><a href="./name/142606605.html">MFR</a></td>
-                            <td><a href="./name/142606605.html">I&nbsp;139.3–4</a></td>
-                            <td><a href="./name/142606605.html">Ptah exists</a></td>
-                        </tr>
-                        <tr>
-                            <td class="pn"><a href="./name/142606605.html">ptḥ-wnn⸗f</a></td>
-                            <td  class="gender"  title="both genders"><a href="./name/142606605.html">both</a></td>
-                            <td  class="no-att"><a href="./name/142606605.html">12</a></td>
-                            <td><a href="./name/142606605.html">early 12th–mid-13th Dyn.</a></td>
-                            <td title="Memphis-Faiyum Region"><a href="./name/142606605.html">MFR</a></td>
-                            <td><a href="./name/142606605.html">I&nbsp;139.3–4</a></td>
-                            <td><a href="./name/142606605.html">Ptah exists</a></td>
-                        </tr>
-                        <tr>
-                            <td class="pn"><a href="./name/142606605.html">ptḥ-wnn⸗f</a></td>
-                            <td  class="gender"  title="both genders"><a href="./name/142606605.html">both</a></td>
-                            <td  class="no-att"><a href="./name/142606605.html">12</a></td>
-                            <td><a href="./name/142606605.html">early 12th–mid-13th Dyn.</a></td>
-                            <td title="Memphis-Faiyum Region"><a href="./name/142606605.html">MFR</a></td>
-                            <td><a href="./name/142606605.html">I&nbsp;139.3–4</a></td>
-                            <td><a href="./name/142606605.html">Ptah exists</a></td>
-                        </tr>
-                        <tr>
-                            <td class="pn"><a href="./name/142606605.html">ptḥ-wnn⸗f</a></td>
-                            <td  class="gender"  title="both genders"><a href="./name/142606605.html">both</a></td>
-                            <td  class="no-att"><a href="./name/142606605.html">12</a></td>
-                            <td><a href="./name/142606605.html">early 12th–mid-13th Dyn.</a></td>
-                            <td title="Memphis-Faiyum Region"><a href="./name/142606605.html">MFR</a></td>
-                            <td><a href="./name/142606605.html">I&nbsp;139.3–4</a></td>
-                            <td><a href="./name/142606605.html">Ptah exists</a></td>
-                        </tr>
-                        <tr>
-                            <td class="pn"><a href="./name/142606605.html">ptḥ-wnn⸗f</a></td>
-                            <td  class="gender"  title="both genders"><a href="./name/142606605.html">both</a></td>
-                            <td  class="no-att"><a href="./name/142606605.html">12</a></td>
-                            <td><a href="./name/142606605.html">early 12th–mid-13th Dyn.</a></td>
-                            <td title="Memphis-Faiyum Region"><a href="./name/142606605.html">MFR</a></td>
-                            <td><a href="./name/142606605.html">I&nbsp;139.3–4</a></td>
-                            <td><a href="./name/142606605.html">Ptah exists</a></td>
-                        </tr>
-                        <tr>
-                            <td class="pn"><a href="./name/142606605.html">ptḥ-wnn⸗f</a></td>
-                            <td  class="gender"  title="both genders"><a href="./name/142606605.html">both</a></td>
-                            <td  class="no-att"><a href="./name/142606605.html">12</a></td>
-                            <td><a href="./name/142606605.html">early 12th–mid-13th Dyn.</a></td>
-                            <td title="Memphis-Faiyum Region"><a href="./name/142606605.html">MFR</a></td>
-                            <td><a href="./name/142606605.html">I&nbsp;139.3–4</a></td>
-                            <td><a href="./name/142606605.html">Ptah exists</a></td>
-                        </tr>
-                        <tr>
-                            <td class="pn"><a href="./name/142606605.html">ptḥ-wnn⸗f</a></td>
-                            <td  class="gender"  title="both genders"><a href="./name/142606605.html">both</a></td>
-                            <td  class="no-att"><a href="./name/142606605.html">12</a></td>
-                            <td><a href="./name/142606605.html">early 12th–mid-13th Dyn.</a></td>
-                            <td title="Memphis-Faiyum Region"><a href="./name/142606605.html">MFR</a></td>
-                            <td><a href="./name/142606605.html">I&nbsp;139.3–4</a></td>
-                            <td><a href="./name/142606605.html">Ptah exists</a></td>
-                        </tr>
-                        <tr>
-                            <td class="pn"><a href="./name/142606605.html">ptḥ-wnn⸗f</a></td>
-                            <td  class="gender"  title="both genders"><a href="./name/142606605.html">both</a></td>
-                            <td  class="no-att"><a href="./name/142606605.html">12</a></td>
-                            <td><a href="./name/142606605.html">early 12th–mid-13th Dyn.</a></td>
-                            <td title="Memphis-Faiyum Region"><a href="./name/142606605.html">MFR</a></td>
-                            <td><a href="./name/142606605.html">I&nbsp;139.3–4</a></td>
-                            <td><a href="./name/142606605.html">Ptah exists</a></td>
-                        </tr>
-                        <tr>
-                            <td class="pn"><a href="./name/142606605.html">ptḥ-wnn⸗f</a></td>
-                            <td  class="gender"  title="both genders"><a href="./name/142606605.html">both</a></td>
-                            <td  class="no-att"><a href="./name/142606605.html">12</a></td>
-                            <td><a href="./name/142606605.html">early 12th–mid-13th Dyn.</a></td>
-                            <td title="Memphis-Faiyum Region"><a href="./name/142606605.html">MFR</a></td>
-                            <td><a href="./name/142606605.html">I&nbsp;139.3–4</a></td>
-                            <td><a href="./name/142606605.html">Ptah exists</a></td>
-                        </tr>
-                        <tr>
-                            <td class="pn"><a href="./name/142606605.html">ptḥ-wnn⸗f</a></td>
-                            <td  class="gender"  title="both genders"><a href="./name/142606605.html">both</a></td>
-                            <td  class="no-att"><a href="./name/142606605.html">12</a></td>
-                            <td><a href="./name/142606605.html">early 12th–mid-13th Dyn.</a></td>
-                            <td title="Memphis-Faiyum Region"><a href="./name/142606605.html">MFR</a></td>
-                            <td><a href="./name/142606605.html">I&nbsp;139.3–4</a></td>
-                            <td><a href="./name/142606605.html">Ptah exists</a></td>
-                        </tr>
-                        <tr>
-                            <td class="pn"><a href="./name/142606605.html">ptḥ-wnn⸗f</a></td>
-                            <td  class="gender"  title="both genders"><a href="./name/142606605.html">both</a></td>
-                            <td  class="no-att"><a href="./name/142606605.html">12</a></td>
-                            <td><a href="./name/142606605.html">early 12th–mid-13th Dyn.</a></td>
-                            <td title="Memphis-Faiyum Region"><a href="./name/142606605.html">MFR</a></td>
-                            <td><a href="./name/142606605.html">I&nbsp;139.3–4</a></td>
-                            <td><a href="./name/142606605.html">Ptah exists</a></td>
-                        </tr>
-                        <tr>
-                            <td class="pn"><a href="./name/142606605.html">ptḥ-wnn⸗f</a></td>
-                            <td  class="gender"  title="both genders"><a href="./name/142606605.html">both</a></td>
-                            <td  class="no-att"><a href="./name/142606605.html">12</a></td>
-                            <td><a href="./name/142606605.html">early 12th–mid-13th Dyn.</a></td>
-                            <td title="Memphis-Faiyum Region"><a href="./name/142606605.html">MFR</a></td>
-                            <td><a href="./name/142606605.html">I&nbsp;139.3–4</a></td>
-                            <td><a href="./name/142606605.html">Ptah exists</a></td>
-                        </tr>
-                        <tr>
-                            <td class="pn"><a href="./name/142606605.html">ptḥ-wnn⸗f</a></td>
-                            <td  class="gender"  title="both genders"><a href="./name/142606605.html">both</a></td>
-                            <td  class="no-att"><a href="./name/142606605.html">12</a></td>
-                            <td><a href="./name/142606605.html">early 12th–mid-13th Dyn.</a></td>
-                            <td title="Memphis-Faiyum Region"><a href="./name/142606605.html">MFR</a></td>
-                            <td><a href="./name/142606605.html">I&nbsp;139.3–4</a></td>
-                            <td><a href="./name/142606605.html">Ptah exists</a></td>
-                        </tr>
-                        <tr>
-                            <td class="pn"><a href="./name/142606605.html">ptḥ-wnn⸗f</a></td>
-                            <td  class="gender"  title="both genders"><a href="./name/142606605.html">both</a></td>
-                            <td  class="no-att"><a href="./name/142606605.html">12</a></td>
-                            <td><a href="./name/142606605.html">early 12th–mid-13th Dyn.</a></td>
-                            <td title="Memphis-Faiyum Region"><a href="./name/142606605.html">MFR</a></td>
-                            <td><a href="./name/142606605.html">I&nbsp;139.3–4</a></td>
-                            <td><a href="./name/142606605.html">Ptah exists</a></td>
-                        </tr>
-                        <tr>
-                            <td class="pn"><a href="./name/142606605.html">ptḥ-wnn⸗f</a></td>
-                            <td  class="gender"  title="both genders"><a href="./name/142606605.html">both</a></td>
-                            <td  class="no-att"><a href="./name/142606605.html">12</a></td>
-                            <td><a href="./name/142606605.html">early 12th–mid-13th Dyn.</a></td>
-                            <td title="Memphis-Faiyum Region"><a href="./name/142606605.html">MFR</a></td>
-                            <td><a href="./name/142606605.html">I&nbsp;139.3–4</a></td>
-                            <td><a href="./name/142606605.html">Ptah exists</a></td>
-                        </tr>
-                        <tr>
-                            <td class="pn"><a href="./name/142606605.html">ptḥ-wnn⸗f</a></td>
-                            <td  class="gender"  title="both genders"><a href="./name/142606605.html">both</a></td>
-                            <td  class="no-att"><a href="./name/142606605.html">12</a></td>
-                            <td><a href="./name/142606605.html">early 12th–mid-13th Dyn.</a></td>
-                            <td title="Memphis-Faiyum Region"><a href="./name/142606605.html">MFR</a></td>
-                            <td><a href="./name/142606605.html">I&nbsp;139.3–4</a></td>
-                            <td><a href="./name/142606605.html">Ptah exists</a></td>
-                        </tr>
-                        <tr>
-                            <td class="pn"><a href="./name/142606605.html">ptḥ-wnn⸗f</a></td>
-                            <td  class="gender"  title="both genders"><a href="./name/142606605.html">both</a></td>
-                            <td  class="no-att"><a href="./name/142606605.html">12</a></td>
-                            <td><a href="./name/142606605.html">early 12th–mid-13th Dyn.</a></td>
-                            <td title="Memphis-Faiyum Region"><a href="./name/142606605.html">MFR</a></td>
-                            <td><a href="./name/142606605.html">I&nbsp;139.3–4</a></td>
-                            <td><a href="./name/142606605.html">Ptah exists</a></td>
-                        </tr>
-                        <tr>
-                            <td class="pn"><a href="./name/142606605.html">ptḥ-wnn⸗f</a></td>
-                            <td  class="gender"  title="both genders"><a href="./name/142606605.html">both</a></td>
-                            <td  class="no-att"><a href="./name/142606605.html">12</a></td>
-                            <td><a href="./name/142606605.html">early 12th–mid-13th Dyn.</a></td>
-                            <td title="Memphis-Faiyum Region"><a href="./name/142606605.html">MFR</a></td>
-                            <td><a href="./name/142606605.html">I&nbsp;139.3–4</a></td>
-                            <td><a href="./name/142606605.html">Ptah exists</a></td>
-                        </tr>
-                        <tr>
-                            <td class="pn"><a href="./name/142606605.html">ptḥ-wnn⸗f</a></td>
-                            <td  class="gender"  title="both genders"><a href="./name/142606605.html">both</a></td>
-                            <td  class="no-att"><a href="./name/142606605.html">12</a></td>
-                            <td><a href="./name/142606605.html">early 12th–mid-13th Dyn.</a></td>
-                            <td title="Memphis-Faiyum Region"><a href="./name/142606605.html">MFR</a></td>
-                            <td><a href="./name/142606605.html">I&nbsp;139.3–4</a></td>
-                            <td><a href="./name/142606605.html">Ptah exists</a></td>
-                        </tr>
-                        <tr>
-                            <td class="pn"><a href="./name/142606605.html">ptḥ-wnn⸗f</a></td>
-                            <td  class="gender"  title="both genders"><a href="./name/142606605.html">both</a></td>
-                            <td  class="no-att"><a href="./name/142606605.html">12</a></td>
-                            <td><a href="./name/142606605.html">early 12th–mid-13th Dyn.</a></td>
-                            <td title="Memphis-Faiyum Region"><a href="./name/142606605.html">MFR</a></td>
-                            <td><a href="./name/142606605.html">I&nbsp;139.3–4</a></td>
-                            <td><a href="./name/142606605.html">Ptah exists</a></td>
-                        </tr>
-                        <tr>
-                            <td class="pn"><a href="./name/142606605.html">ptḥ-wnn⸗f</a></td>
-                            <td  class="gender"  title="both genders"><a href="./name/142606605.html">both</a></td>
-                            <td  class="no-att"><a href="./name/142606605.html">12</a></td>
-                            <td><a href="./name/142606605.html">early 12th–mid-13th Dyn.</a></td>
-                            <td title="Memphis-Faiyum Region"><a href="./name/142606605.html">MFR</a></td>
-                            <td><a href="./name/142606605.html">I&nbsp;139.3–4</a></td>
-                            <td><a href="./name/142606605.html">Ptah exists</a></td>
-                        </tr>
-                        <tr>
-                            <td class="pn"><a href="./name/142606605.html">ptḥ-wnn⸗f</a></td>
-                            <td  class="gender"  title="both genders"><a href="./name/142606605.html">both</a></td>
-                            <td  class="no-att"><a href="./name/142606605.html">12</a></td>
-                            <td><a href="./name/142606605.html">early 12th–mid-13th Dyn.</a></td>
-                            <td title="Memphis-Faiyum Region"><a href="./name/142606605.html">MFR</a></td>
-                            <td><a href="./name/142606605.html">I&nbsp;139.3–4</a></td>
-                            <td><a href="./name/142606605.html">Ptah exists</a></td>
-                        </tr>
-                        <tr>
-                            <td class="pn"><a href="./name/142606605.html">ptḥ-wnn⸗f</a></td>
-                            <td  class="gender"  title="both genders"><a href="./name/142606605.html">both</a></td>
-                            <td  class="no-att"><a href="./name/142606605.html">12</a></td>
-                            <td><a href="./name/142606605.html">early 12th–mid-13th Dyn.</a></td>
-                            <td title="Memphis-Faiyum Region"><a href="./name/142606605.html">MFR</a></td>
-                            <td><a href="./name/142606605.html">I&nbsp;139.3–4</a></td>
-                            <td><a href="./name/142606605.html">Ptah exists</a></td>
-                        </tr>
-                        <tr>
-                            <td class="pn"><a href="./name/142606605.html">ptḥ-wnn⸗f</a></td>
-                            <td  class="gender"  title="both genders"><a href="./name/142606605.html">both</a></td>
-                            <td  class="no-att"><a href="./name/142606605.html">12</a></td>
-                            <td><a href="./name/142606605.html">early 12th–mid-13th Dyn.</a></td>
-                            <td title="Memphis-Faiyum Region"><a href="./name/142606605.html">MFR</a></td>
-                            <td><a href="./name/142606605.html">I&nbsp;139.3–4</a></td>
-                            <td><a href="./name/142606605.html">Ptah exists</a></td>
-                        </tr>
-                        <tr>
-                            <td class="pn"><a href="./name/142606605.html">ptḥ-wnn⸗f</a></td>
-                            <td  class="gender"  title="both genders"><a href="./name/142606605.html">both</a></td>
-                            <td  class="no-att"><a href="./name/142606605.html">12</a></td>
-                            <td><a href="./name/142606605.html">early 12th–mid-13th Dyn.</a></td>
-                            <td title="Memphis-Faiyum Region"><a href="./name/142606605.html">MFR</a></td>
-                            <td><a href="./name/142606605.html">I&nbsp;139.3–4</a></td>
-                            <td><a href="./name/142606605.html">Ptah exists</a></td>
-                        </tr>
-                        <tr>
-                            <td class="pn"><a href="./name/142606605.html">ptḥ-wnn⸗f</a></td>
-                            <td  class="gender"  title="both genders"><a href="./name/142606605.html">both</a></td>
-                            <td  class="no-att"><a href="./name/142606605.html">12</a></td>
-                            <td><a href="./name/142606605.html">early 12th–mid-13th Dyn.</a></td>
-                            <td title="Memphis-Faiyum Region"><a href="./name/142606605.html">MFR</a></td>
-                            <td><a href="./name/142606605.html">I&nbsp;139.3–4</a></td>
-                            <td><a href="./name/142606605.html">Ptah exists</a></td>
-                        </tr>
-                        <tr>
-                            <td class="pn"><a href="./name/142606605.html">ptḥ-wnn⸗f</a></td>
-                            <td  class="gender"  title="both genders"><a href="./name/142606605.html">both</a></td>
-                            <td  class="no-att"><a href="./name/142606605.html">12</a></td>
-                            <td><a href="./name/142606605.html">early 12th–mid-13th Dyn.</a></td>
-                            <td title="Memphis-Faiyum Region"><a href="./name/142606605.html">MFR</a></td>
-                            <td><a href="./name/142606605.html">I&nbsp;139.3–4</a></td>
-                            <td><a href="./name/142606605.html">Ptah exists</a></td>
-                        </tr>
-                        <tr>
-                            <td class="pn"><a href="./name/142606605.html">ptḥ-wnn⸗f</a></td>
-                            <td  class="gender"  title="both genders"><a href="./name/142606605.html">both</a></td>
-                            <td  class="no-att"><a href="./name/142606605.html">12</a></td>
-                            <td><a href="./name/142606605.html">early 12th–mid-13th Dyn.</a></td>
-                            <td title="Memphis-Faiyum Region"><a href="./name/142606605.html">MFR</a></td>
-                            <td><a href="./name/142606605.html">I&nbsp;139.3–4</a></td>
-                            <td><a href="./name/142606605.html">Ptah exists</a></td>
-                        </tr>
-                        <tr>
-                            <td class="pn"><a href="./name/142606605.html">ptḥ-wnn⸗f</a></td>
-                            <td  class="gender"  title="both genders"><a href="./name/142606605.html">both</a></td>
-                            <td  class="no-att"><a href="./name/142606605.html">12</a></td>
-                            <td><a href="./name/142606605.html">early 12th–mid-13th Dyn.</a></td>
-                            <td title="Memphis-Faiyum Region"><a href="./name/142606605.html">MFR</a></td>
-                            <td><a href="./name/142606605.html">I&nbsp;139.3–4</a></td>
-                            <td><a href="./name/142606605.html">Ptah exists</a></td>
-                        </tr>
-                        <tr>
-                            <td class="pn"><a href="./name/142606605.html">ptḥ-wnn⸗f</a></td>
-                            <td  class="gender"  title="both genders"><a href="./name/142606605.html">both</a></td>
-                            <td  class="no-att"><a href="./name/142606605.html">12</a></td>
-                            <td><a href="./name/142606605.html">early 12th–mid-13th Dyn.</a></td>
-                            <td title="Memphis-Faiyum Region"><a href="./name/142606605.html">MFR</a></td>
-                            <td><a href="./name/142606605.html">I&nbsp;139.3–4</a></td>
-                            <td><a href="./name/142606605.html">Ptah exists</a></td>
-                        </tr>
-                        <tr>
-                            <td class="pn"><a href="./name/142606605.html">ptḥ-wnn⸗f</a></td>
-                            <td  class="gender"  title="both genders"><a href="./name/142606605.html">both</a></td>
-                            <td  class="no-att"><a href="./name/142606605.html">12</a></td>
-                            <td><a href="./name/142606605.html">early 12th–mid-13th Dyn.</a></td>
-                            <td title="Memphis-Faiyum Region"><a href="./name/142606605.html">MFR</a></td>
-                            <td><a href="./name/142606605.html">I&nbsp;139.3–4</a></td>
-                            <td><a href="./name/142606605.html">Ptah exists</a></td>
-                        </tr>
-                        <tr>
-                            <td class="pn"><a href="./name/142606605.html">ptḥ-wnn⸗f</a></td>
-                            <td  class="gender"  title="both genders"><a href="./name/142606605.html">both</a></td>
-                            <td  class="no-att"><a href="./name/142606605.html">12</a></td>
-                            <td><a href="./name/142606605.html">early 12th–mid-13th Dyn.</a></td>
-                            <td title="Memphis-Faiyum Region"><a href="./name/142606605.html">MFR</a></td>
-                            <td><a href="./name/142606605.html">I&nbsp;139.3–4</a></td>
-                            <td><a href="./name/142606605.html">Ptah exists</a></td>
-                        </tr>
-                        <tr>
-                            <td class="pn"><a href="./name/142606605.html">ptḥ-wnn⸗f</a></td>
-                            <td  class="gender"  title="both genders"><a href="./name/142606605.html">both</a></td>
-                            <td  class="no-att"><a href="./name/142606605.html">12</a></td>
-                            <td><a href="./name/142606605.html">early 12th–mid-13th Dyn.</a></td>
-                            <td title="Memphis-Faiyum Region"><a href="./name/142606605.html">MFR</a></td>
-                            <td><a href="./name/142606605.html">I&nbsp;139.3–4</a></td>
-                            <td><a href="./name/142606605.html">Ptah exists</a></td>
-                        </tr>
-                        <tr>
-                            <td class="pn"><a href="./name/142606605.html">ptḥ-wnn⸗f</a></td>
-                            <td  class="gender"  title="both genders"><a href="./name/142606605.html">both</a></td>
-                            <td  class="no-att"><a href="./name/142606605.html">12</a></td>
-                            <td><a href="./name/142606605.html">early 12th–mid-13th Dyn.</a></td>
-                            <td title="Memphis-Faiyum Region"><a href="./name/142606605.html">MFR</a></td>
-                            <td><a href="./name/142606605.html">I&nbsp;139.3–4</a></td>
-                            <td><a href="./name/142606605.html">Ptah exists</a></td>
-                        </tr>
-                        <tr>
-                            <td class="pn"><a href="./name/142606605.html">ptḥ-wnn⸗f</a></td>
-                            <td  class="gender"  title="both genders"><a href="./name/142606605.html">both</a></td>
-                            <td  class="no-att"><a href="./name/142606605.html">12</a></td>
-                            <td><a href="./name/142606605.html">early 12th–mid-13th Dyn.</a></td>
-                            <td title="Memphis-Faiyum Region"><a href="./name/142606605.html">MFR</a></td>
-                            <td><a href="./name/142606605.html">I&nbsp;139.3–4</a></td>
-                            <td><a href="./name/142606605.html">Ptah exists</a></td>
-                        </tr>
-                        <tr>
-                            <td class="pn"><a href="./name/142606605.html">ptḥ-wnn⸗f</a></td>
-                            <td  class="gender"  title="both genders"><a href="./name/142606605.html">both</a></td>
-                            <td  class="no-att"><a href="./name/142606605.html">12</a></td>
-                            <td><a href="./name/142606605.html">early 12th–mid-13th Dyn.</a></td>
-                            <td title="Memphis-Faiyum Region"><a href="./name/142606605.html">MFR</a></td>
-                            <td><a href="./name/142606605.html">I&nbsp;139.3–4</a></td>
-                            <td><a href="./name/142606605.html">Ptah exists</a></td>
-                        </tr>
-                        <tr>
-                            <td class="pn"><a href="./name/142606605.html">ptḥ-wnn⸗f</a></td>
-                            <td  class="gender"  title="both genders"><a href="./name/142606605.html">both</a></td>
-                            <td  class="no-att"><a href="./name/142606605.html">12</a></td>
-                            <td><a href="./name/142606605.html">early 12th–mid-13th Dyn.</a></td>
-                            <td title="Memphis-Faiyum Region"><a href="./name/142606605.html">MFR</a></td>
-                            <td><a href="./name/142606605.html">I&nbsp;139.3–4</a></td>
-                            <td><a href="./name/142606605.html">Ptah exists</a></td>
-                        </tr>
-                        <tr>
-                            <td class="pn"><a href="./name/142606605.html">ptḥ-wnn⸗f</a></td>
-                            <td  class="gender"  title="both genders"><a href="./name/142606605.html">both</a></td>
-                            <td  class="no-att"><a href="./name/142606605.html">12</a></td>
-                            <td><a href="./name/142606605.html">early 12th–mid-13th Dyn.</a></td>
-                            <td title="Memphis-Faiyum Region"><a href="./name/142606605.html">MFR</a></td>
-                            <td><a href="./name/142606605.html">I&nbsp;139.3–4</a></td>
-                            <td><a href="./name/142606605.html">Ptah exists</a></td>
-                        </tr>
-                        <tr>
-                            <td class="pn"><a href="./name/142606605.html">ptḥ-wnn⸗f</a></td>
-                            <td  class="gender"  title="both genders"><a href="./name/142606605.html">both</a></td>
-                            <td  class="no-att"><a href="./name/142606605.html">12</a></td>
-                            <td><a href="./name/142606605.html">early 12th–mid-13th Dyn.</a></td>
-                            <td title="Memphis-Faiyum Region"><a href="./name/142606605.html">MFR</a></td>
-                            <td><a href="./name/142606605.html">I&nbsp;139.3–4</a></td>
-                            <td><a href="./name/142606605.html">Ptah exists</a></td>
-                        </tr>
-                        <tr>
-                            <td class="pn"><a href="./name/142606605.html">ptḥ-wnn⸗f</a></td>
-                            <td  class="gender"  title="both genders"><a href="./name/142606605.html">both</a></td>
-                            <td  class="no-att"><a href="./name/142606605.html">12</a></td>
-                            <td><a href="./name/142606605.html">early 12th–mid-13th Dyn.</a></td>
-                            <td title="Memphis-Faiyum Region"><a href="./name/142606605.html">MFR</a></td>
-                            <td><a href="./name/142606605.html">I&nbsp;139.3–4</a></td>
-                            <td><a href="./name/142606605.html">Ptah exists</a></td>
-                        </tr>
+
 
                     </table>
                 </div>
                 <div class="controls">
                     <div class="left-controls"><a href="./index.php?...&amp;startat=1">First</a>&nbsp;<a href="./index.php?...&amp;startat=1">Prev 50</a> </div>
-                    <div class="mid-controls">Displaying names 41-60 out of totally 150</div>
+                    <div class="mid-controls">Displaying people 1–4 out of totally 4</div>
                     <div class="right-controls"><a href="./index.php?...&amp;startat=n-61">Next 50</a>&nbsp;<a href="./index.php?...&amp;startat=141">Last</a> </div>
                 </div>
             </div>

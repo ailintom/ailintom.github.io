@@ -95,12 +95,20 @@ h4 img{
 }
 .half-width-field-block{
     display:inline-block;
-    width: 50%;
+    
     min-width:11em;
-    background-color:  #e0e0e0;
+    
     outline:3px solid white;
     padding: 6px;
     overflow: hidden;
+    overflow:auto;
+}
+
+.person-A{
+    background-color: #fbf8d0;
+}
+.person-B{
+    background-color: #f1dae7;
 }
 .half-width-field-block select{
    width:100%;
@@ -187,10 +195,11 @@ h4 img{
     font-variant: small-caps;
     background-color:#f0f0f0;
 }
-.tab table tr td, .tab table tr td{
-    padding-left: 0.5ex;
-    padding-right: 0.5ex;
+.tab table tr td, .tab table th td{
+    padding-left: 0.5em;
+    padding-right: 0.5em;
 }
+
 .t, .pn, .gender, .noatt{
     padding-left: 0.5ex;
     padding-right: 0.5ex;
