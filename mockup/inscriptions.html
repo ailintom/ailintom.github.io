@@ -20,7 +20,7 @@
                     <li><a href=people.html>People</a></li>
                     <li><a href=inscriptions.html>Inscribed objects</a></li>
                     <li><a href=places.html>Places</a></li>
-                    <li><a href=places.html>Collections</a></li>
+                    <li><a href=collections.html>Collections</a></li>
                     <li><a href=bibliography.html>Bibliography</a></li>
                     <li><a href=about.html>Info</a></li>
                     <li><a href=impressum.html>Impressum</a></li>
@@ -37,7 +37,7 @@
                         <label for="inv_no"  class="input-label" title="Inventory number">Inv. no.</label>
                         <span class="searchinput"><input type="text" name="inv_no" id="inv_no" value="" placeholder="Example: E.5265"></span>
                         <datalist id="collections">
-                            <!--[if lte IE 9]><select data-datalist="periods"><![endif]-->
+                            <!--[if lte IE 9]><select data-datalist="collections"><![endif]-->
                             <option value="Aberdeen">Aberdeen</option>
                             <option value="Aix-en-Provence">Aix-en-Provence</option>
                             <option value="Amherst">Amherst</option>
@@ -195,7 +195,7 @@
                         <label for="object_type" class="input-label">Object type:</label>
                         <span class="searchinput"><input type="text" name="object_type" id="object_type" value="" placeholder="Example: Stela" list="object_types"></span>
                         <datalist id="object_types">
-                            <!--[if lte IE 9]><select data-datalist="periods"><![endif]-->
+                            <!--[if lte IE 9]><select data-datalist="object_types"><![endif]-->
                             <option value="Block">Block</option>
                             <option value="Seal">Seal</option>
                             <option value="Statue">Statue</option>
@@ -207,7 +207,7 @@
                         <label for="object_subtype"  class="input-label" title="Object subtype">Subtype:</label>
                         <span class="searchinput"><input type="text" name="object_subtype" id="object_subtype" value="" placeholder="Example: Round-topped stela" list="object_subtypes"></span>
                         <datalist id="object_subtypes">
-                            <!--[if lte IE 9]><select data-datalist="periods"><![endif]-->
+                            <!--[if lte IE 9]><select data-datalist="object_subtypes"><![endif]-->
                             <option value="Round-topped stela">Round-topped stela</option>
                             <option value="Block-statue">Block-statue</option>
                             <option value="Seated pair-statue">Seated pair-statue</option>
@@ -224,7 +224,7 @@
                         <label for="material" class="input-label">Material:</label>
                         <span class="searchinput"><input type="text" name="material" id="material" value="" placeholder="Example: Granite" list="materials"></span>
                         <datalist id="materials">
-                            <!--[if lte IE 9]><select data-datalist="periods"><![endif]-->
+                            <!--[if lte IE 9]><select data-datalist="materials"><![endif]-->
                             <option value="granite">granite</option>
                             <option value="stetatite">stetatite</option>
                             <option value="limestone">limestone</option>
@@ -432,10 +432,10 @@
             </div>
             <div class="main">
                 <h3>Search results</h3>
+
                 <div class="controls">
-                    <div class="left-controls"><a href="./index.php?...&amp;startat=1">First</a>&nbsp;<a href="./index.php?...&amp;startat=1">Prev 50</a> </div>
-                    <div class="mid-controls">Displaying inscribed objects 101-150 out of totally 150</div>
-                    <div class="right-controls"><a href="./index.php?...&amp;startat=n-61">Next 50</a>&nbsp;<a href="./index.php?...&amp;startat=141">Last</a> </div>
+                    Displaying inscribed objects 101&ndash;150 out of totally 150<br>
+                    <a href="./index.php?...&amp;startat=1">First</a>&nbsp;<a href="./index.php?...&amp;startat=1">Prev 50</a>&nbsp;<a href="./index.php?...&amp;startat=n-61">Next 50</a>&nbsp;<a href="./index.php?...&amp;startat=141">Last</a> 
                 </div>
                 <div class="tab">
                     <table>
@@ -486,9 +486,8 @@
                     </table>
                 </div>
                 <div class="controls">
-                    <div class="left-controls"><a href="./index.php?...&amp;startat=1">First</a>&nbsp;<a href="./index.php?...&amp;startat=1">Prev 50</a> </div>
-                    <div class="mid-controls">Displaying inscribed objects 101-150 out of totally 150</div>
-                    <div class="right-controls"><a href="./index.php?...&amp;startat=n-61">Next 50</a>&nbsp;<a href="./index.php?...&amp;startat=141">Last</a> </div>
+                    Displaying inscribed objects 101&ndash;150 out of totally 150<br>
+                    <a href="./index.php?...&amp;startat=1">First</a>&nbsp;<a href="./index.php?...&amp;startat=1">Prev 50</a>&nbsp;<a href="./index.php?...&amp;startat=n-61">Next 50</a>&nbsp;<a href="./index.php?...&amp;startat=141">Last</a> 
                 </div>
             </div>
             <div id="push"></div></div>

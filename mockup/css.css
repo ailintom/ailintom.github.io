@@ -95,13 +95,13 @@ h4 img{
 }
 .half-width-field-block{
     display:inline-block;
-    
+
     min-width:11em;
     overflow:auto;
 }
 .full-width-field-block{
     display:inline-block;
-    
+
     min-width:11em;
     width:100%;
     overflow:auto;
@@ -110,22 +110,23 @@ h4 img{
     min-width:4em;
 }
 
+.half-width-field-block.person-A, .half-width-field-block.person-B{
+    outline:3px solid white;
+    padding: 6px;
+}
 .person-A{
     background-color: #f9f5b9;
-        outline:3px solid white;
-    padding: 6px;
 }
 .person-B{
     background-color: #f8edf3;
-        outline:3px solid white;
-    padding: 6px;
 }
 .half-width-field-block select{
-   width:100%;
+    width:100%;
     overflow: hidden;
 }
 .half-width-field-block h4{
     margin: 0;
+    padding-left:0.3em;
 }
 
 .short-field-block{
@@ -148,7 +149,7 @@ h4 img{
 .input-label{
     float: left;
     padding-left:0.3em;
-    
+
 }
 .search-options{
     display: table;

@@ -23,7 +23,7 @@
                     <li><a href=people.html>People</a></li>
                     <li><a href=inscriptions.html>Inscribed objects</a></li>
                     <li><a href=places.html>Places</a></li>
-                    <li><a href=places.html>Collections</a></li>
+                    <li><a href=collections.html>Collections</a></li>
                     <li><a href=bibliography.html>Bibliography</a></li>
                     <li><a href=about.html>Info</a></li>
                     <li><a href=impressum.html>Impressum</a></li>
@@ -34,8 +34,9 @@
                 <h2>Search people</h2>
                 <h3>Search terms</h3>
                 <form action="/index.php" method="get">
-
-                    <div class="half-width-field-block person-A">
+                    <div class="full-width-field-block">
+ <span class="input-label"><i>You can use % or * as wildcards. "nfr*" will match nfr.wj or nfr-ḥtp. "*nfr* will also match snfr.wj"</i><br></span>
+                    </div><div class="half-width-field-block person-A">
 
                         <h4>Person A</h4>
                         <span class="input-label">Gender: </span><input type="radio" id="Aany" name="Agender" tabindex="-1" value="any" class="radio" checked> <label for="Aany" class="radiolabel"><span title="Match names regardless of gender">any</span></label>
@@ -59,18 +60,16 @@
                         <label for="Btitle" class="input-label">Title:</label>
                         <span class="searchinput"><input type="text" name="Btitle" id="Btitle" value="" placeholder="MdC (jmj-rA pr) or Unicode (jmj-rꜣ pr)"></span>
                     </div>
-                    <div class="controls">
-
-                        <div class="mid-controls">
-                            <i>You can use % or * as wildcards.</i><br>
-                            <select name="relation" >
+                    <div class="full-width-field-block">
+                        <label for="relation" class="input-label">Relation between A and B:&nbsp;</label>
+                            <select name="relation" id="relation">
                                 <option value="same_inscription" SELECTED>A and B appear in the same source</option>
                                 <option value="child" >A is a child of B</option>
                                 <option value="parent" >A is a parent of B</option>
                                 <option value="spouses" >A and B are spouses</option>
                                 <option value="siblings" >A and B are siblings</option>
                             </select>
-                        </div>
+                        
                     </div>
 
                     <span class="optionsbeforesearchinput"><span class="input-label">Geographic filter: </span><input type="radio" id="provenance" name="geo-filter" tabindex="-1" value="provenance" class="radio" checked> <label for="provenance" class="radiolabel"><span title="Attestations in sources found in the certain region">Provenance:</span></label>
@@ -249,7 +248,7 @@
                         <option value="Sobekhotep IV">
                             <!--[if lte IE 9]></select><![endif]-->
                     </datalist>
-                    <input type="checkbox" id="only_persons" name="only_persons" tabindex="-1" value="true" class="radio"> <label for="only_persons" ><span title="Only show dossiers of persons with multiple attestations">Only show dossiers of persons with multiple attestations</span></label>
+                    <input type="checkbox" id="only_persons" name="only_persons" tabindex="-1" value="true" class="radio"> <label for="only_persons" ><span title="Only show dossiers of persons with multiple attestations">Only dossiers of persons with multiple attestations</span></label>
 
                     <script src="datalist.polyfill.min.js"></script>
                     <br>
@@ -264,9 +263,8 @@
 
                 <h3>Search results</h3>
                 <div class="controls">
-                    <div class="left-controls"><a href="./index.php?...&amp;startat=1">First</a>&nbsp;<a href="./index.php?...&amp;startat=1">Prev 50</a> </div>
-                    <div class="mid-controls">Displaying people 1–4 out of totally 4</div>
-                    <div class="right-controls"><a href="./index.php?...&amp;startat=n-61">Next 50</a>&nbsp;<a href="./index.php?...&amp;startat=141">Last</a> </div>
+                    Displaying people 1&ndash;4 out of totally 4<br>
+                    <a href="./index.php?...&amp;startat=1">First</a>&nbsp;<a href="./index.php?...&amp;startat=1">Prev 50</a>&nbsp;<a href="./index.php?...&amp;startat=n-61">Next 50</a>&nbsp;<a href="./index.php?...&amp;startat=141">Last</a> 
                 </div>
                 <div class="tab">
                     <table>
@@ -331,9 +329,8 @@
                     </table>
                 </div>
                 <div class="controls">
-                    <div class="left-controls"><a href="./index.php?...&amp;startat=1">First</a>&nbsp;<a href="./index.php?...&amp;startat=1">Prev 50</a> </div>
-                    <div class="mid-controls">Displaying people 1–4 out of totally 4</div>
-                    <div class="right-controls"><a href="./index.php?...&amp;startat=n-61">Next 50</a>&nbsp;<a href="./index.php?...&amp;startat=141">Last</a> </div>
+                    Displaying people 1&ndash;4 out of totally 4<br>
+                    <a href="./index.php?...&amp;startat=1">First</a>&nbsp;<a href="./index.php?...&amp;startat=1">Prev 50</a>&nbsp;<a href="./index.php?...&amp;startat=n-61">Next 50</a>&nbsp;<a href="./index.php?...&amp;startat=141">Last</a> 
                 </div>
             </div>
 

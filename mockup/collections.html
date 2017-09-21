@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Persons and Names of the Middle Kingdom</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css.css" rel="stylesheet" type="text/css" >
+        <link href="datalist-polyfill-style.css" rel="stylesheet" type="text/css" >
+    </head>
+    <body>
+        <div id="wrapper">
+            <div class="header">
+                <h1><span class="red">P</span>ersons and <span class="red">N</span>ames of the <span class="red">M</span>iddle Kingdom</h1>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href=index.html>Personal names</a></li>
+                    <li><a href=types.html>Name types</a></li>
+                    <li><a href=titles.html>Titles</a></li>
+                    <li><a href=people.html>People</a></li>
+                    <li><a href=inscriptions.html>Inscribed objects</a></li>
+                    <li><a href=places.html>Places</a></li>
+                    <li><a href=collections.html>Collections</a></li>
+                    <li><a href=bibliography.html>Bibliography</a></li>
+                    <li><a href=about.html>Info</a></li>
+                    <li><a href=impressum.html>Impressum</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h2>Search collections</h2>
+                <h3>Search terms</h3>
+                <form action="/inscriptions.php" method="get">
+                    <div class="full-width-field-block">
+                        <span class="input-label"><i>You can use % or * as wildcards. "Mar*" will match Mariemont or Marseille.</i><br></span>
+                    </div>
+                    <label for="short_name" class="input-label"><span>Short name:</span></label> <span class="searchinput"><input type="text" id="short_name" name="short_name" list="short_names" title="Enter the short name of the museum or its part"></span>
+                    <datalist id="short_names">
+                        <!--[if lte IE 9]><select data-datalist="short_names"><![endif]-->
+                        <option value="Hermitage">
+                        <option value="OIM">
+                        <option value="Moscow">
+                        <option value="UC">
+                        <option value="Uppsala">
+                            <!--[if lte IE 9]></select><![endif]-->
+                    </datalist>
+                    <label for="full_name" class="input-label"><span>Full name:</span></label> <span class="searchinput"><input type="text" id="full_name" name="full_name" list="full_names" title="Enter the full name of the museum or its part"></span>
+                    <datalist id="full_names">
+                        <!--[if lte IE 9]><select data-datalist="full_names"><![endif]-->
+                        <option value="The Oriental Institute Museum, The University of Chicago">
+                        <option value="The Petrie Museum of Egyptian Archaeology, University College London">
+                        <option value="The Pushkin State Museum of Fine Arts, Moscow">
+                        <option value="The State Hermitage, Saint Petersburg">
+                        <option value="The Victoria Museum for Egyptian Antiquities, Museum Gustavianum, Uppsala">
+                            <!--[if lte IE 9]></select><![endif]-->
+                    </datalist>
+
+                    <label for="location" class="input-label"><span>Location:</span></label> <span class="searchinput"><input type="text" id="location" name="location" list="locations" title="Enter the city where the collection is located"></span>
+                    <datalist id="locations">
+                        <!--[if lte IE 9]><select data-datalist="locations"><![endif]-->
+                        <option value="Chicago, USA">
+                        <option value="London, UK">
+                        <option value="Saint-Petersburg, Russia">
+                        <option value="Moscow, Russia">
+                        <option value="Uppsala, Sweden">
+                            <!--[if lte IE 9]></select><![endif]-->
+                    </datalist>
+                  <div class="short-field-block">
+                        <label for="tm_coll_id" class="input-label"><span >Trismegistos Collections ID:</span></label> <span class="searchinput"><input type="text" id="tm_coll_id" name="tm_coll_id" title="" placeholder="Example: 188"></span>
+                        
+                    </div>
+                    <script src="datalist.polyfill.min.js"></script>
+                    <br>
+                    <input type="submit" value="Search" title="Display collections matching the search terms">
+                    <input type="submit" value="Clear" title="Clear search terms and display all records">
+                </form>
+            </div>
+            <div class="main">
+                <h3>Search results</h3>
+
+                <div class="controls">
+                    Displaying collections 1&ndash;4 out of totally 4<br>
+                    <a href="./index.php?...&amp;startat=1">First</a>&nbsp;<a href="./index.php?...&amp;startat=1">Prev 50</a>&nbsp;<a href="./index.php?...&amp;startat=n-61">Next 50</a>&nbsp;<a href="./index.php?...&amp;startat=141">Last</a> 
+                </div>
+                <div class="tab">
+                    <table>
+                        <tr>
+                            <th>Short name</th>
+                            <th>Full name</th>
+                            <th>Location</th>
+                            <th title="Number of inscribed objects from this collection in the database">Objects</th>
+                        </tr>
+                                                <tr>
+                            <td><a href="./collection/218103812">Liebieghaus</a></td>
+                            <td><a href="./collection/218103812">Liebieghaus</a></td>
+                            <td><a href="./collection/218103812">Frankfurt, Germany</a></td>
+                            <td><a href="./collection/218103812">2</a></td>
+                        </tr>
+                         <tr>
+                            <td><a href="./collection/218103815">Liège</a></td>
+                            <td><a href="./collection/218103815">The Curtius Museum</a></td>
+                            <td><a href="./collection/218103815">Liège, Belfium</a></td>
+                            <td><a href="./collection/218103815">3</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="./collection/218103809">Liverpool E.</a></td>
+                            <td><a href="./collection/218103809">The Garstang Museum of Archaeology, The University of Liverpool</a></td>
+                            <td><a href="./collection/218103809">Liverpool, UK</a></td>
+                            <td><a href="./collection/218103809">19</a></td>
+                        </tr>
+                                                <tr>
+                            <td><a href="./collection/218103811">Liverpool WM</a></td>
+                            <td><a href="./collection/218103811">World Museum</a></td>
+                            <td><a href="./collection/218103811">Liverpool, UK</a></td>
+                            <td><a href="./collection/218103811">28</a></td>
+                        </tr>
+
+                    </table>
+                </div>
+                <div class="controls">
+                    Displaying collections 1&ndash;4 out of totally 4<br>
+                    <a href="./index.php?...&amp;startat=1">First</a>&nbsp;<a href="./index.php?...&amp;startat=1">Prev 50</a>&nbsp;<a href="./index.php?...&amp;startat=n-61">Next 50</a>&nbsp;<a href="./index.php?...&amp;startat=141">Last</a> 
+                </div>
+            </div>
+            <div id="push"></div></div>
+        <div class="footer">
+            <span class="footer-text">
+                Copyright 2017 Alexander Ilin-Tomich
+                <br>Licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" title="Creative Commons Attribution-ShareAlike 4.0 International">CC BY-SA 4.0</a> except the following logotypes<br></span><span><a href="https://uni-mainz.de/"><img src="JGU-Logo_farbe_med.svg" alt="Johannes Gutenberg University Mainz" title="Johannes Gutenberg University Mainz"  onerror="this.src='JGU-Logo_farbe_med.png'"></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.fritz-thyssen-stiftung.de"><img src="Logo_Fritz_Thyssen_Stiftung.svg" alt="Fritz Thyssen Foundation" title="Fritz Thyssen Foundation" onerror="this.src='Logo_Fritz_Thyssen_Stiftung.png'"></a></span>
+        </div>
+    </body>
+</html>
