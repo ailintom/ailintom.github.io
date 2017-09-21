@@ -5,7 +5,16 @@
     margin-top: 0pt;
     margin-bottom: 0pt;
 }
-
+#stable_url{
+    position: absolute;
+top: 0.3em;
+right: 0.3em;
+}
+#stable_url_text{
+    background-color: transparent;
+    border: 0px solid;
+    text-align: right;
+}
 a img {
     border: 0;
 }
@@ -95,7 +104,7 @@ h4 img{
 }
 .half-width-field-block{
     display:inline-block;
-
+vertical-align: text-top;
     min-width:11em;
     overflow:auto;
 }
@@ -239,7 +248,7 @@ h4 img{
 .person{
     background-color: #e0e0e0;
 }
-.criterion a:link,.workshop a:link,.attestation a:link,.person a:link,.name a:link, .biblio-ref a:link, .place a:link, .type a:link, .inscription a:link, .title a:link{
+.semantic-classes a:link,.name-patterns a:link, .criterion a:link,.workshop a:link,.attestation a:link,.person a:link,.name a:link, .biblio-ref a:link, .place a:link, .type a:link, .inscription a:link, .title a:link{
     text-decoration:none;
 }
 
