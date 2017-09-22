@@ -94,6 +94,13 @@ h4 img, .spelling-attestation img{
     height: 1.75em;
 
 }
+h5{
+    font-size:1.05em;
+}
+.locations h4{
+    padding-left:0;
+}
+
 .searchinput {
     display: block;
     overflow: hidden;
@@ -241,6 +248,9 @@ vertical-align: text-top;
 }
 .semantic-classes a:link,.name-patterns a:link, .criterion a:link,.workshop a:link,.attestation a:link,.person a:link,.name a:link, .biblio-ref a:link, .place a:link, .type a:link, .inscription a:link, .title a:link{
     text-decoration:none;
+}
+.attestations *:target{
+    color: red !important;
 }
 .csl-entry:target a:hover, .csl-entry:target a:active, .csl-entry:target a:link, .csl-entry:target a:visited{
     color: red !important;
