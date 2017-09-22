@@ -84,7 +84,7 @@ h4{
     margin-bottom: 0.25ex;
     padding-left:6ex;
 }
-h4 img{
+h4 img, .spelling-attestation img{
     height: 1.75em;
 
 }
@@ -184,21 +184,10 @@ vertical-align: text-top;
 }
 .controls{
     width:100%;
-    display:table;
+    padding-bottom: 0.5em;
+    
 }
-.left-controls{
-    text-align:left;
-    display:table-cell;
-}
-.mid-controls{
-    text-align:center;
-    display:table-cell;
-}
-
-.right-controls{
-    text-align:right;
-    display:table-cell;
-}
+ 
 .radiolabel {
     color: grey;
 }
@@ -212,7 +201,7 @@ vertical-align: text-top;
 .pn{
     white-space: nowrap;
 }
-.pn, .tit{
+.pn, .tit, .wording{
     font-style: italic;
 }
 .tab{
