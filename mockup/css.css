@@ -6,11 +6,16 @@
     margin-bottom: 0pt;
 }
 #stable_url{
-    position: absolute;
+    /*position: absolute;*/
 top: 0.3em;
 right: 0.3em;
+text-align: right;
+float:right;
 }
-#stable_url_text{
+#stable_url, #stable_url *{
+    font-size:90%;
+}
+#stable_url input, #stable_url select{
     background-color: transparent;
     border: 0px solid;
     text-align: right;
@@ -29,7 +34,7 @@ body {
     margin:0;
     height: 100%;
 }
-input, textarea{
+input, textarea, select{
     font-family:Roboto, DejaVu Sans, sans-serif;
     font-size:medium;
 }
@@ -70,6 +75,7 @@ input, textarea{
 h1{
     margin-top: 0ex;
     margin-bottom: 0.75ex;
+    font-size:1.75em;
 }
 h2{
     margin-top: 0ex;
@@ -216,11 +222,7 @@ vertical-align: text-top;
     padding-left: 0.5em;
     padding-right: 0.5em;
 }
-
-.t, .pn, .gender, .noatt{
-    padding-left: 0.5ex;
-    padding-right: 0.5ex;
-}
+ 
 .no-att{
     text-align: center;
 }
@@ -240,7 +242,9 @@ vertical-align: text-top;
 .semantic-classes a:link,.name-patterns a:link, .criterion a:link,.workshop a:link,.attestation a:link,.person a:link,.name a:link, .biblio-ref a:link, .place a:link, .type a:link, .inscription a:link, .title a:link{
     text-decoration:none;
 }
-
+.csl-entry:target a:hover, .csl-entry:target a:active, .csl-entry:target a:link, .csl-entry:target a:visited{
+    color: red !important;
+}
 .csl-entry{
     padding-left:2em;
     text-indent: -2em;
