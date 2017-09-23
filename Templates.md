@@ -1,0 +1,6 @@
+
+# Die Liste von Seiten-(Templates)#  
+1) Ein Template für Seiten ohne dynamischen Elementen und Gestaltungsbesonderheiten (Impressum, Information, Bibliographie)  
+Mockup: <mockup/about.html> / <https://ailintom.github.io/mockup/about.html>
+<mockup/impressum.html> / <https://ailintom.github.io/mockup/impressum.html>
+</mockup/bibliography.html> / <https://ailintom.github.io/mockup/bibliography.html>
