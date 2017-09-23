@@ -13,9 +13,9 @@
         <div id="wrapper">
             <div id="stable_url">
                 <form id="stable_url_form"><label for="version">Version:&nbsp;</label><select id="version">
-                    <option value="current" selected>current (22/09/2017)</option>
-                    <option value="2">2 (22/07/2017)</option>
-                    <option value="1">1 (18/09/2016)</option>
+                        <option value="current" selected>current (22/09/2017)</option>
+                        <option value="2">2 (22/07/2017)</option>
+                        <option value="1">1 (18/09/2016)</option>
                     </select></form>
             </div>
             <div class="header">
@@ -42,7 +42,7 @@
                 <h3>Search terms</h3>
                 <form action="/people.php" method="get">
                     <div class="full-width-field-block">
- <span class="input-label"><i>You can use % or * as wildcards. "nfr*" will match nfr.wj or nfr-ḥtp. "*nfr* will also match snfr.wj"</i><br></span>
+                        <span class="input-label"><i>You can use % or * as wildcards. "nfr*" will match nfr.wj or nfr-ḥtp. "*nfr* will also match snfr.wj"</i><br></span>
                     </div><div class="half-width-field-block person-A">
 
                         <h4>Person A</h4>
@@ -50,33 +50,65 @@
                         <input type="radio" id="Afemale" name="Agender" tabindex="-1" value="female" class="radio"> <label for="Afemale" class="radiolabel"><span title="Match names borne only by women" class="gender">f</span></label>
                         <input type="radio" id="Amale" name="Agender" tabindex="-1" value="male"  class="radio"> <label for="Amale" class="radiolabel"><span title="Match names borne only by men" class="gender">m</span></label><br>
 
-
-                        <label for="personal_nameA" class="input-label">Name:</label>
-                        <span class="searchinput"><input type="text" name="personal_nameA" id="personal_nameA" value="" placeholder="MdC (ra-Htp) or Unicode (rꜥ-ḥtp)">
-                        </span>
                         <label for="Atitle" class="input-label">Title:</label>
                         <span class="searchinput"><input type="text" name="Atitle" id="Atitle" value="" placeholder="MdC (jmj-rA pr) or Unicode (jmj-rꜣ pr)"></span>
+
+                        <label for="personal_nameA" class="input-label">Name:</label>
+                        <span class="searchinput"><input type="text" name="personal_nameA" id="personal_nameA" value="" placeholder="MdC (ra-Htp) or Unicode (rꜥ-ḥtp)"></span>
+
+                            <label for="Aname-type-formal" class="input-label"><span >Name pattern:</span></label> <span class="searchinput"><input type="text" id="Aname-type-formal" name="Aname-type-formal" title="" placeholder="Example: DN (m)+ḥtp.w" list="name-types-formal" ></span>     
+                            <label for="Aname-type-sematic" class="input-label"><span >Semantic class:</span></label> <span class="searchinput"><input type="text" id="Aname-type-sematic" name="Aname-type-sematic" title="" placeholder="Example: theophoric names" list="name-types-semantic" ></span>      
+
+                            <datalist id="name-types-formal">
+                                <!--[if lte IE 9]><select data-datalist="periods"><![endif]-->
+                                <option value="N-ꜥnḫ">N-ꜥnḫ</option>
+                                <option value="N-jḳr">N-jḳr</option>
+                                <option value="N-ḥr-ḥb">N-ḥr-ḥb</option>
+                                <option value="GN (f)-ḥtp.tj">GN (f)-ḥtp.tj</option>
+                                <option value="ḥtp-GN (f)">ḥtp-GN (f)</option>
+                                <option value="GN-m-wsḫ.t">GN-m-wsḫ.t</option>
+                                <option value="nfr.w-*">nfr.w-*</option>
+                                <option value="N-ms.w">N-ms.w</option>
+                                <option value="N-snb.w">N-snb.w</option>
+                                <option value="N-m-sꜣ⸗f/s">N-m-sꜣ⸗f/s</option>
+                                <!--[if lte IE 9]></select><![endif]-->
+                            </datalist>
+                            <datalist id="name-types-semantic">
+                                <!--[if lte IE 9]><select data-datalist="periods"><![endif]-->
+                                <option value="Names with ẖtjj">
+                                <option value="Names with ptḥ">
+                                <option value="Names with sbk">
+                                <option value="Names with jmn">
+                                <option value="Theophoric names">
+                                <option value="Basileophoric names">
+                                <option value="Endophoric name">
+                                    <!--[if lte IE 9]></select><![endif]-->
+                            </datalist>
+                        
 
                     </div><div class="half-width-field-block person-B">
                         <h4>Person B</h4>
                         <span class="input-label">Gender: </span><input type="radio" id="Bany" name="Bgender" tabindex="-1" value="any" class="radio" checked> <label for="Bany" class="radiolabel"><span title="Match names regardless of gender">any</span></label>
                         <input type="radio" id="Bfemale" name="Bgender" tabindex="-1" value="female" class="radio"> <label for="Bfemale" class="radiolabel"><span title="Match names borne only by women" class="gender">f</span></label>
                         <input type="radio" id="Bmale" name="Bgender" tabindex="-1" value="male"  class="radio"> <label for="Bmale" class="radiolabel"><span title="Match names borne only by men" class="gender">m</span></label><br>
-                        <label for="Bpersonal_name" class="input-label">Name:</label>
-                        <span class="searchinput"><input type="text" name="Bpersonal_name" id="Bpersonal_name" value="" placeholder="MdC (ra-Htp) or Unicode (rꜥ-ḥtp)"></span>
                         <label for="Btitle" class="input-label">Title:</label>
                         <span class="searchinput"><input type="text" name="Btitle" id="Btitle" value="" placeholder="MdC (jmj-rA pr) or Unicode (jmj-rꜣ pr)"></span>
+                        <label for="Bpersonal_name" class="input-label">Name:</label>
+                        <span class="searchinput"><input type="text" name="Bpersonal_name" id="Bpersonal_name" value="" placeholder="MdC (ra-Htp) or Unicode (rꜥ-ḥtp)"></span>
+                        <label for="Bname-type-formal" class="input-label"><span >Name pattern:</span></label> <span class="searchinput"><input type="text" id="Bname-type-formal" name="Bname-type-formal" title="" placeholder="Example: DN (m)+ḥtp.w" list="name-types-formal" ></span>     
+                        <label for="Bname-type-sematic" class="input-label"><span >Semantic class:</span></label> <span class="searchinput"><input type="text" id="Bname-type-sematic" name="Bname-type-sematic" title="" placeholder="Example: theophoric names" list="name-types-semantic" ></span>      
+
                     </div>
                     <div class="full-width-field-block">
                         <label for="relation" class="input-label">Relation between A and B:&nbsp;</label>
-                            <select name="relation" id="relation">
-                                <option value="same_inscription" SELECTED>A and B appear in the same source</option>
-                                <option value="child" >A is a child of B</option>
-                                <option value="parent" >A is a parent of B</option>
-                                <option value="spouses" >A and B are spouses</option>
-                                <option value="siblings" >A and B are siblings</option>
-                            </select>
-                        
+                        <select name="relation" id="relation">
+                            <option value="same_inscription" SELECTED>A and B appear in the same source</option>
+                            <option value="child" >A is a child of B</option>
+                            <option value="parent" >A is a parent of B</option>
+                            <option value="spouses" >A and B are spouses</option>
+                            <option value="siblings" >A and B are siblings</option>
+                        </select>
+
                     </div>
 
                     <span class="optionsbeforesearchinput"><span class="input-label">Geographic filter: </span><input type="radio" id="provenance" name="geo-filter" tabindex="-1" value="provenance" class="radio" checked> <label for="provenance" class="radiolabel"><span title="Attestations in sources found in the certain region">Provenance:</span></label>
@@ -345,7 +377,11 @@
         <div class="footer">
             <span class="footer-text">
                 Copyright 2017 Alexander Ilin-Tomich
-                <br>Licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" title="Creative Commons Attribution-ShareAlike 4.0 International">CC BY-SA 4.0</a> except the following logotypes<br></span><span><a href="https://uni-mainz.de/"><img src="JGU-Logo_farbe_med.svg" alt="Johannes Gutenberg University Mainz" title="Johannes Gutenberg University Mainz" onload="javascript:if(/constructor/i.test(window.HTMLElement)){this.src='JGU-Logo_farbe_med.png';}/*Show png in old Safari browsers, as these cannot handle SVG in img*/" onerror="this.src='JGU-Logo_farbe_med.png'"></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.fritz-thyssen-stiftung.de"><img src="Logo_Fritz_Thyssen_Stiftung.svg" alt="Fritz Thyssen Foundation" title="Fritz Thyssen Foundation" onload="javascript:if(/constructor/i.test(window.HTMLElement)){this.src='Logo_Fritz_Thyssen_Stiftung.png';}" onerror="this.src='Logo_Fritz_Thyssen_Stiftung.png'"></a></span>
+                <br>Licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" title="Creative Commons Attribution-ShareAlike 4.0 International">CC BY-SA 4.0</a> except the following logotypes<br></span><span><a href="https://uni-mainz.de/"><img src="JGU-Logo_farbe_med.svg" alt="Johannes Gutenberg University Mainz" title="Johannes Gutenberg University Mainz" onload="javascript:if (/constructor/i.test(window.HTMLElement)) {
+                            this.src = 'JGU-Logo_farbe_med.png';
+                        }/*Show png in old Safari browsers, as these cannot handle SVG in img*/" onerror="this.src='JGU-Logo_farbe_med.png'"></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.fritz-thyssen-stiftung.de"><img src="Logo_Fritz_Thyssen_Stiftung.svg" alt="Fritz Thyssen Foundation" title="Fritz Thyssen Foundation" onload="javascript:if (/constructor/i.test(window.HTMLElement)) {
+                                    this.src = 'Logo_Fritz_Thyssen_Stiftung.png';
+                                }" onerror="this.src='Logo_Fritz_Thyssen_Stiftung.png'"></a></span>
         </div>
     </body>
 </html>
