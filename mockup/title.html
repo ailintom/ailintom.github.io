@@ -9,7 +9,7 @@
     </head>
     <body><div id="wrapper">
             <div id="stable_url">
-                <form id="stable_url_form"><label for="stable_url_text">Stable url:&nbsp;</label><input id="stable_url_text" type="text" value="https://pnm.uni-mainz.de/title/41943051" readonly="readonly" size="30" onclick="javascript:this.focus();this.select();" onfocus="javascript:this.select();"><br><label for="version">Version:&nbsp;</label><select id="version">
+                    <form id="stable_url_form"><span>Stable url:&nbsp;</span><span id="stable_url_text" onclick=" var range, selection; if (window.getSelection && document.createRange) { selection = window.getSelection(); range = document.createRange(); range.selectNodeContents(this); selection.removeAllRanges();selection.addRange(range);} else if (document.selection && document.body.createTextRange) {range = document.body.createTextRange();range.moveToElementText(this);range.select(); /*based on a code snippet by Eugene Manuilov, published at https://stackoverflow.com/a/14816523 under cc by-sa 3.0*/}">https://pnm.uni-mainz.de/title/41943051</span><br><label for="version">Version:&nbsp;</label><select id="version">
                     <option value="current" selected>current (22/09/2017)</option>
                     <option value="2">2 (22/07/2017)</option>
                     <option value="1">1 (18/09/2016)</option>
