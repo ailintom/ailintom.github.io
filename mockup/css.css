@@ -7,10 +7,10 @@
 }
 #stable_url{
     /*position: absolute;*/
-top: 0.3em;
-right: 0.3em;
-text-align: right;
-float:right;
+    top: 0.3em;
+    right: 0.3em;
+    text-align: right;
+    float:right;
 }
 #stable_url, #stable_url *{
     font-size:90%;
@@ -117,7 +117,7 @@ h5{
 }
 .half-width-field-block{
     display:inline-block;
-vertical-align: text-top;
+    vertical-align: text-top;
     min-width:11em;
     overflow:auto;
 }
@@ -198,9 +198,9 @@ vertical-align: text-top;
 .controls{
     width:100%;
     padding-bottom: 0.5em;
-    
+
 }
- 
+
 .radiolabel {
     color: grey;
 }
@@ -229,7 +229,7 @@ vertical-align: text-top;
     padding-left: 0.5em;
     padding-right: 0.5em;
 }
- 
+
 .no-att{
     text-align: center;
 }
@@ -249,8 +249,35 @@ vertical-align: text-top;
 .semantic-classes a:link,.name-patterns a:link, .criterion a:link,.workshop a:link,.attestation a:link,.person a:link,.name a:link, .biblio-ref a:link, .place a:link, .type a:link, .inscription a:link, .title a:link{
     text-decoration:none;
 }
+.attestation a:link{
+    text-decoration:none;
+    color:#0000EE;
+}
+.attestation a:visited, .attestation a:active, .attestation a:hover{
+    color:#0000EE;
+}
+
 .attestations *:target{
     color: red !important;
+}
+
+.title-attribute{
+    /* title of a property displayed on a page*/
+}
+.biblio-ref-no-author-date{
+    /* reference to a something that is not included in the bibliography (for example, other online databases)*/
+}
+.period{
+    /* designation of a period (from the corresponding thesaurus)*/
+}
+.note{
+    /* any freeform notes not corresponding to any thesaurus*/
+}
+.collection{
+    /*  name of a museum or another collection */
+}
+.inv_no{
+    /*  inventory number in a collection */
 }
 .csl-entry:target a:hover, .csl-entry:target a:active, .csl-entry:target a:link, .csl-entry:target a:visited{
     color: red !important;
@@ -263,9 +290,9 @@ vertical-align: text-top;
     text-decoration:none; color: black;
 }
 .csl-entry a:visited{
-   color: black;
+    color: black;
 }
- 
+
 .filter{
     background-color: #f3f3f3;
 }
