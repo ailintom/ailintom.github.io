@@ -12,7 +12,7 @@ Die insgesamt 4000-10000 Einträge werden in Portionen à 50 Datensatze gezeigt.
 3) Ein Template für die Anzeige eines einzelnen Datensatzes aus der Tabelle personal_names (mit zugeordneten Schreibvarianten und Personenbelegen) 
 Alle Belege des Namens (maximal bis zu 423, durchschnittlich 5) werden auf einer Seite gezeigt, ohne Teilung.  
 Mockup: [name.html](mockup/name.html) / <https://ailintom.github.io/mockup/name.html>  
-Mockup: [name1.html](mockup/name1.html) / <https://ailintom.github.io/mockup/name1.html>
+Mockup: [name1.html](mockup/name2.html) / <https://ailintom.github.io/mockup/name2.html>
 
 4) Das Formular für Durchsuchen der Verwaltungstitel und Anzeige der Suchergebnisse 
 Die insgesamt ca. 2000 Einträge werden in Portionen à 50 Datensatze gezeigt.   
@@ -34,7 +34,7 @@ Mockup: [attestation.html](mockup/attestation.html) / <https://ailintom.github.i
 
 9) Das Formular für Durchsuchen der Inschriften und Anzeige der Suchergebnisse, bzw. der gesamten Datenmenge
 Die insgesamt 10000 Einträge werden in Portionen à 50 Datensatze gezeigt.   
-Mockup: [people.html](mockup/people.html) / <https://ailintom.github.io/mockup/people.html> 
+Mockup: [inscriptions.html](mockup/inscriptions.html) / <https://ailintom.github.io/mockup/inscriptions.html> 
 
 10) Ein Template für die Anzeige eines einzelnen Datensatzes aus der Tabelle inscriptions (mit zugeordneten Personenbelegen)  
 Mockup: [inscription.html](mockup/inscription.html) / <https://ailintom.github.io/mockup/inscription.html>
