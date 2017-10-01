@@ -23,6 +23,21 @@
         left: 17%;
         width: 83% !important;
     }
+    .search-options{
+    display: table;
+    table-layout: auto;    
+}
+.search-options-group{
+    display: table-row;
+}
+.search-options-item{
+    display: table-cell;
+}
+}
+@media only screen and (max-width: 1000px) {
+    .search-options-item{
+    clear:left;
+}
 }
 /*Display menu in the left column in wide windows*/
 @media only screen and (min-width: 598px) {

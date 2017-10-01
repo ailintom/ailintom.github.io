@@ -100,6 +100,27 @@ h5{
 }
 .locations h4{
     padding-left:0;
+    font-weight:normal;
+    font-variant: small-caps;
+    font-size:110%;
+}
+.locations{
+    list-style-type: none;
+    padding-left:0;
+    margin-left: 0;    
+}
+.bonds{
+    list-style-type: none;
+    
+}
+.children{
+    list-style-type: none;
+}
+.attestations{
+    list-style-type: disc;
+}
+.attestations h5{
+    font-size:110%;
 }
 
 .searchinput {
@@ -175,23 +196,13 @@ h5{
 
 }
 .search-options{
-    display: table;
-    table-layout: auto;
-    width:100%;
-}
-.search-options-group{
-    display: table-row;
-}
-
-.search-options-item{
-    display: table-cell;
+width:100%;
 }
 .search-options-item:first-child{
     width:1%;
     white-space:nowrap;
 }
 .search-options-item50{
-    /*display: table-cell;*/
     display: inline-block;
 
     width:50%;
@@ -212,6 +223,7 @@ h5{
     font-style: italic;
     text-align: center;
 }
+
 .pn{
     white-space: nowrap;
 }
@@ -224,7 +236,7 @@ h5{
 }
 .tab th{
     font-variant: small-caps;
-    background-color:#f0f0f0;
+    background-color:#b3b3b3;
 }
 .tab table tr td, .tab table th td{
     padding-left: 0.5em;
@@ -258,10 +270,6 @@ h5{
     color:#0000EE;
 }
 
-.attestations *:target{
-    color: red !important;
-}
-
 .title-attribute{
     /* title of a property displayed on a page*/
 }
@@ -280,8 +288,9 @@ h5{
 .inv_no{
     /*  inventory number in a collection */
 }
-.csl-entry:target a:hover, .csl-entry:target a:active, .csl-entry:target a:link, .csl-entry:target a:visited{
-    color: red !important;
+.attestations *:target, .csl-entry:target a:hover, .csl-entry:target a:active, .csl-entry:target a:link, .csl-entry:target a:visited{
+    /* Highlight targeted entries with font color */
+    color: #009933 !important; 
 }
 .csl-entry{
     padding-left:2em;
@@ -297,7 +306,9 @@ h5{
 .filter{
     background-color: #f3f3f3;
 }
-
+.title-attribute{
+    font-weight: bold;
+}
 @font-face {
     font-family: 'Roboto';
     src: url('subset-Roboto-Italic.eot');
