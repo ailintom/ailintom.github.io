@@ -237,7 +237,20 @@ h5{
 .tab th{
     font-variant: small-caps;
     background-color:#b3b3b3;
+      background-repeat: no-repeat;
+    background-position: center right;
+    padding-right:22px;
 }
+.nosort{
+    background: url(./third-party-media/tablesorter/bg.gif); 
+}
+.ascending{
+    background: url(./third-party-media/tablesorter/asc.gif); 
+}
+.descending{
+    background: url(./third-party-media/tablesorter/desc.gif); 
+}
+
 .tab table tr td, .tab table th td{
     padding-left: 0.5em;
     padding-right: 0.5em;
@@ -333,41 +346,41 @@ h5{
 }
 @font-face {
     font-family: 'Roboto';
-    src: url('subset-Roboto-Italic.eot');
-    src: url('subset-Roboto-Italic.eot?#iefix') format('embedded-opentype'),
-        url('subset-Roboto-Italic.woff2') format('woff2'),
-        url('subset-Roboto-Italic.woff') format('woff'),
-        url('subset-Roboto-Italic.ttf') format('truetype');
+    src: url('./third-party-media/roboto/subset-Roboto-Italic.eot');
+    src: url('./third-party-media/roboto/subset-Roboto-Italic.eot?#iefix') format('embedded-opentype'),
+        url('./third-party-media/roboto/subset-Roboto-Italic.woff2') format('woff2'),
+        url('./third-party-media/roboto/subset-Roboto-Italic.woff') format('woff'),
+        url('./third-party-media/roboto/subset-Roboto-Italic.ttf') format('truetype');
     font-weight: normal;
     font-style: italic;
 }
 @font-face {
     font-family: 'Roboto';
-    src: url('subset-Roboto-Bold.eot');
-    src: url('subset-Roboto-Bold.eot?#iefix') format('embedded-opentype'),
-        url('subset-Roboto-Bold.woff2') format('woff2'),
-        url('subset-Roboto-Bold.woff') format('woff'),
-        url('subset-Roboto-Bold.ttf') format('truetype');
+    src: url('./third-party-media/roboto/subset-Roboto-Bold.eot');
+    src: url('./third-party-media/roboto/subset-Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+        url('./third-party-media/roboto/subset-Roboto-Bold.woff2') format('woff2'),
+        url('./third-party-media/roboto/subset-Roboto-Bold.woff') format('woff'),
+        url('./third-party-media/roboto/subset-Roboto-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
 @font-face {
     font-family: 'Roboto';
-    src: url('subset-Roboto-BoldItalic.eot');
-    src: url('subset-Roboto-BoldItalic.eot?#iefix') format('embedded-opentype'),
-        url('subset-Roboto-BoldItalic.woff2') format('woff2'),
-        url('subset-Roboto-BoldItalic.woff') format('woff'),
-        url('subset-Roboto-BoldItalic.ttf') format('truetype');
+    src: url('./third-party-media/roboto/subset-Roboto-BoldItalic.eot');
+    src: url('./third-party-media/roboto/subset-Roboto-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('./third-party-media/roboto/subset-Roboto-BoldItalic.woff2') format('woff2'),
+        url('./third-party-media/roboto/subset-Roboto-BoldItalic.woff') format('woff'),
+        url('./third-party-media/roboto/subset-Roboto-BoldItalic.ttf') format('truetype');
     font-weight: bold;
     font-style: italic;
 }
 @font-face {
     font-family: 'Roboto';
-    src: url('subset-Roboto-Regular.eot');
-    src: url('subset-Roboto-Regular.eot?#iefix') format('embedded-opentype'),
-        url('subset-Roboto-Regular.woff2') format('woff2'),
-        url('subset-Roboto-Regular.woff') format('woff'),
-        url('subset-Roboto-Regular.ttf') format('truetype');
+    src: url('./third-party-media/roboto/subset-Roboto-Regular.eot');
+    src: url('./third-party-media/roboto/subset-Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./third-party-media/roboto/subset-Roboto-Regular.woff2') format('woff2'),
+        url('./third-party-media/roboto/subset-Roboto-Regular.woff') format('woff'),
+        url('./third-party-media/roboto/subset-Roboto-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
