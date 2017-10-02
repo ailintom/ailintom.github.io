@@ -1,14 +1,15 @@
 .menu {
-    width: 17%;
-    float: left;
+
     border: none ;
     padding: 3px;
+
 }
 .column {
-    width: 83%;
-    float: left;
+    /*width: 83%;
+    float: left;*/
+
     padding: 3px;
-   /* border: none;*/
+    /* border: none;*/
 }
 .main {
     border: none ;
@@ -20,27 +21,33 @@
 @media only screen and (min-width: 1000px) {
     .main { 
         position: relative;
-        left: 17%;
-        width: 83% !important;
+        margin-left:9em;
     }
     .search-options{
-    display: table;
-    table-layout: auto;    
-}
-.search-options-group{
-    display: table-row;
-}
-.search-options-item{
-    display: table-cell;
-}
+        display: table;
+        table-layout: auto;    
+    }
+    .search-options-group{
+        display: table-row;
+    }
+    .search-options-item{
+        display: table-cell;
+    }
 }
 @media only screen and (max-width: 1000px) {
     .search-options-item{
-    clear:left;
-}
+        clear:left;
+    }
 }
 /*Display menu in the left column in wide windows*/
 @media only screen and (min-width: 598px) {
+    .column{
+        margin-left:9em;
+    }
+    .menu{
+        position:absolute;
+        width: 9em;
+    }    
     .menu a { display: block } 
     .menu   li {
 
@@ -53,18 +60,26 @@
     .menu ul li:nth-last-of-type(1) a{
         padding-bottom:0.5ex; 
     }
+    #wrapper {
+        padding: 1em;
+    }
+    .page-navigation{
+        display:block;
+        float:right;
+        margin-top:-2.406em;
+    }
 }
 @media only screen and (min-width: 26em) {
-.half-width-field-block{
-width: 50%;
-}
+    .half-width-field-block{
+        width: 50%;
+    }
 }
 @media only screen and (max-width: 26em) {
-.half-width-field-block{
-width: 100%;
+    .half-width-field-block{
+        width: 100%;
+    }
 }
-}
-/* Display menu on the top in narrow windows and smartphones */
+/* Display menu and page-navigation as a line on the top of the page in narrow windows and smartphones */
 @media only screen and (max-width: 597px) {
     .menu {
         width: 100%;
@@ -79,7 +94,13 @@ width: 100%;
     }
     .column{
         width:100%;
-        
+
+    }
+    .page-navigation{
+        margin-bottom:0.5em;
+    }    
+   .page-navigation ul li{
+        display:inline ;
     }
 }
 .menu  ul {

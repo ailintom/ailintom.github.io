@@ -9,10 +9,24 @@
     </head>
     <body><div id="wrapper">
             <div id="stable_url">
-                                   <form id="stable_url_form"><span>Stable url:&nbsp;</span><span id="stable_url_text" onclick=" var range, selection; if (window.getSelection && document.createRange) { selection = window.getSelection(); range = document.createRange(); range.selectNodeContents(this); selection.removeAllRanges();selection.addRange(range);} else if (document.selection && document.body.createTextRange) {range = document.body.createTextRange();range.moveToElementText(this);range.select(); /*based on a code snippet by Eugene Manuilov, published at https://stackoverflow.com/a/14816523 under cc by-sa 3.0*/}">https://pnm.uni-mainz.de/place/184549377</span><br><label for="version">Version:&nbsp;</label><select id="version">
-                    <option value="current" selected>current (22/09/2017)</option>
-                    <option value="2">2 (22/07/2017)</option>
-                    <option value="1">1 (18/09/2016)</option>
+                <form id="stable_url_form"><span>Stable url:&nbsp;</span><span id="stable_url_text" onclick=" var range, selection;
+                        if (window.getSelection && document.createRange) {
+                            selection = window.getSelection();
+                            range = document.createRange();
+                            range.selectNodeContents(
+                                    this);
+                            selection.removeAllRanges();
+                            selection.addRange(
+                                    range);
+                        } else if (document.selection && document.body.createTextRange) {
+                            range = document.body.createTextRange();
+                            range.moveToElementText(
+                                    this);
+                            range.select(); /*based on a code snippet by Eugene Manuilov, published at https://stackoverflow.com/a/14816523 under cc by-sa 3.0*/
+                        }">https://pnm.uni-mainz.de/place/184549377</span><br><label for="version">Version:&nbsp;</label><select id="version">
+                        <option value="current" selected>3 (22/09/2017) current</option>
+                        <option value="2">2 (22/07/2017)</option>
+                        <option value="1">1 (18/09/2016)</option>
                     </select></form>
             </div>
             <div class="header">
@@ -35,17 +49,24 @@
             </div>
             <div class="column">
                 <h2>Abydos</h2>
-                <span class="title-attribute">Macro-region:&nbsp;</span><span class="place"><a href="./place/184549551">Southern Upper Egypt</a></span>. <span class="title-attribute">Latutude:&nbsp;</span> <span class="latitude">26.11° N</span><br>
-                <span class="title-attribute">Topographical Bibliography ID:</span> <span class="biblio-ref-no-author-date"><a href="http://topbib.griffith.ox.ac.uk//dtb.html?topbib=601">601</a></span>.
-                <span class="title-attribute">Trismegistos Geo ID:</span> <span class="biblio-ref-no-author-date"><a href="http://www.trismegistos.org/place/34">34</a></span>.
-                <span class="title-attribute">Artefacts of Excavations:</span> <span class="biblio-ref-no-author-date"><a href="http://egyptartefacts.griffith.ox.ac.uk/site/abydos">site guide</a></span>. 
+                <div class="page-navigation"><h5>Navigation</h5>
+                    <ul>
+                        <li><a href="#find-groups">find-groups</a> (135)</li>
+                        <li><a href="#workshops">workshops</a> (2)</li>
+                    </ul>
+                </div>
+                <span class="title-attribute">Macro-region:&nbsp;</span><span class="place"><a href="./place/184549551">Southern Upper Egypt</a></span>.<br><span class="title-attribute">Latutude:&nbsp;</span> <span class="latitude">26.11° N</span><br>
+                <span class="title-attribute">Links:&nbsp;</span>
+                <span class="title-attribute-second-order">Topographical Bibliography ID:</span> <span class="biblio-ref-no-author-date"><a href="http://topbib.griffith.ox.ac.uk//dtb.html?topbib=601">601</a></span>.
+                <span class="title-attribute-second-order">Trismegistos Geo ID:</span> <span class="biblio-ref-no-author-date"><a href="http://www.trismegistos.org/place/34">34</a></span>.
+                <span class="title-attribute-second-order">Artefacts of Excavations:</span> <span class="biblio-ref-no-author-date"><a href="http://egyptartefacts.griffith.ox.ac.uk/site/abydos">site guide</a></span>. 
                 <h3>Inscribed objects</h3>
-                <span class="title-attribute">Inscribed objects found or purchased at this place: </span> <a href="./inscriptions?geo-filter=provenance&amp;place=Abydos">1190</a>.<br>
-                <span class="title-attribute">Inscribed objects that should have been installed at this place: </span> <a href="./inscriptions?geo-filter=installation-place&amp;place=Abydos">80</a>.<br>
-                <span class="title-attribute">Inscribed objects owned be people from this place: </span> <a href="./inscriptions?geo-filter=origin&amp;place=Abydos">51</a>.<br>
-                <span class="title-attribute">Inscribed objects produced at this place </span> <a href="./inscriptions?geo-filter=production-place&amp;place=Abydos">60</a>.<br>
-                <span class="title-attribute">All inscribed objects related to this place </span> <a href="./inscriptions?geo-filter=all&amp;place=Abydos">1250</a>.<br>
-                <h3>Find-groups with inscribed objects</h3>
+                <span class="title-attribute-second-order">Inscribed objects found or purchased at this place: </span> <a href="./inscriptions?geo-filter=provenance&amp;place=Abydos">1190</a>.<br>
+                <span class="title-attribute-second-order">Inscribed objects that should have been installed at this place: </span> <a href="./inscriptions?geo-filter=installation-place&amp;place=Abydos">80</a>.<br>
+                <span class="title-attribute-second-order">Inscribed objects owned by people from this place: </span> <a href="./inscriptions?geo-filter=origin&amp;place=Abydos">51</a>.<br>
+                <span class="title-attribute-second-order">Inscribed objects produced at this place </span> <a href="./inscriptions?geo-filter=production-place&amp;place=Abydos">60</a>.<br>
+                <span class="title-attribute-second-order">All inscribed objects related to this place </span> <a href="./inscriptions?geo-filter=all&amp;place=Abydos">1250</a>.<br>
+                <h3 id="find-groups">Find-groups with inscribed objects</h3>
                 <div class="controls">
                     Totally 135                   
                 </div>
@@ -861,7 +882,7 @@
                     </table>
                 </div>
 
-                <h3>Workshops</h3>
+                <h3 id="workshops">Workshops</h3>
                 <div class="controls">
                     Totally 2                   
                 </div>

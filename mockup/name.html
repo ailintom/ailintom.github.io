@@ -8,11 +8,25 @@
         <link href="datalist-polyfill-style.css" rel="stylesheet" type="text/css" >
     </head>
     <body><div id="wrapper">
-                        <div id="stable_url">
-                                  <form id="stable_url_form"><span>Stable url:&nbsp;</span><span id="stable_url_text" onclick=" var range, selection; if (window.getSelection && document.createRange) { selection = window.getSelection(); range = document.createRange(); range.selectNodeContents(this); selection.removeAllRanges();selection.addRange(range);} else if (document.selection && document.body.createTextRange) {range = document.body.createTextRange();range.moveToElementText(this);range.select(); /*based on a code snippet by Eugene Manuilov, published at https://stackoverflow.com/a/14816523 under cc by-sa 3.0*/}">https://pnm.uni-mainz.de/name/142606605</span><br><label for="version">Version:&nbsp;</label><select id="version">
-                    <option value="current" selected>current (22/09/2017)</option>
-                    <option value="2">2 (22/07/2017)</option>
-                    <option value="1">1 (18/09/2016)</option>
+            <div id="stable_url">
+                <form id="stable_url_form"><span>Stable url:&nbsp;</span><span id="stable_url_text" onclick=" var range, selection;
+                        if (window.getSelection && document.createRange) {
+                            selection = window.getSelection();
+                            range = document.createRange();
+                            range.selectNodeContents(
+                                    this);
+                            selection.removeAllRanges();
+                            selection.addRange(
+                                    range);
+                        } else if (document.selection && document.body.createTextRange) {
+                            range = document.body.createTextRange();
+                            range.moveToElementText(
+                                    this);
+                            range.select(); /*based on a code snippet by Eugene Manuilov, published at https://stackoverflow.com/a/14816523 under cc by-sa 3.0*/
+                        }">https://pnm.uni-mainz.de/name/142606605</span><br><label for="version">Version:&nbsp;</label><select id="version">
+                        <option value="current" selected>3 (22/09/2017) current</option>
+                        <option value="2">2 (22/07/2017)</option>
+                        <option value="1">1 (18/09/2016)</option>
                     </select></form>
             </div>
             <div class="header">
@@ -35,15 +49,25 @@
             </div>
             <div class="column">
                 <h2>ptḥ-wnn⸗f</h2>
+                <div class="page-navigation"><h5>Spellings</h5>
+                    <ul>
+                        <li><a href="#243269633"><img src="./spelling/img/243269633.png" alt="p:t H wn:n n:f"></a> (6)</li>
+                        <li><a href="#243269634"><img src="./spelling/img/243269634.png" alt="p:t H wn:f"></a> (1)</li>
+                        <li><a href="#243269635"><img src="./spelling/img/243269635.png" alt="p:t H M42 n:n:f"></a> (3)</li>
+                        <li><a href="#243269656">Unknown spelling</a> (6)</li>
+                    </ul>
+                </div>
+
                 <span class="translation" lang="en">“Ptah exists”</span>,  <span class="translation" lang="de">“Ptah existiert”</span> (<span class="biblio-ref-no-author-date">Ranke, <i>PN</i> I,&nbsp;139.3–4</span>).<br>
-                <span class="title-attribute">Name types:</span><span class="type"> <a href="/type/251658243">DN (m)-wnn⸗f</a></span>, <span class="type"><a href="./type/251658246.html">names with Ptah</a></span>. <span class="title-attribute">Usage area:</span> <span class="place"><a href="./place/184549412" title="Memphis-Faiyum Region">MFR</a>.</span>
+                <span class="title-attribute">Name types:</span><span class="type"> <a href="/type/251658243">DN (m)-wnn⸗f</a></span>, <span class="type"><a href="./type/251658246.html">names with Ptah</a></span>.<br>
+                <span class="title-attribute">Usage area:</span> <span class="place"><a href="./place/184549412" title="Memphis-Faiyum Region">MFR</a>.</span><br>
                 <span class="title-attribute">Usage period:</span> <span class="period">early 12th–mid-13th Dyn.</span> <span class="title-attribute">Gender:</span> <span class="gender">both.</span><br>
                 <span class="title-attribute">Bibliography:</span> <span class="biblio-ref"><a href="./bibliography.html#16780932">Ranke 1952</a>, 112–3</span>; <span class="biblio-ref"><a href="./bibliography.html#16796498">Gundacker 2014</a>, 83 n.&nbsp;187</span>.<br>
-                <span class="title-attribute">TLA:</span> <span class="biblio-ref-no-author-date"><a href="http://aaew.bbaw.de/tla/servlet/GetWcnDetails?u=phead&f=0&l=0&db=0&wn=701626">701626</a></span>, <span class="biblio-ref-no-author-date"><a href="http://aaew.bbaw.de/tla/servlet/GetWcnDetails?u=phead&f=0&l=0&db=0&wn=701625">701625</a></span>. 
+                <span class="title-attribute">TLA:</span> <span class="biblio-ref-no-author-date"><a href="http://aaew.bbaw.de/tla/servlet/GetWcnDetails?f=0&amp;l=0&amp;db=0&amp;wn=701626">701626</a></span>, <span class="biblio-ref-no-author-date"><a href="http://aaew.bbaw.de/tla/servlet/GetWcnDetails?f=0&amp;l=0&amp;db=0&amp;wn=701625">701625</a></span>. 
                 <h3>Spellings and attestations</h3>
 
                 <div class="filter" id="filter">
-                    
+
                     <h5>Filter</h5>
                     <form action="/index.php" method="get">
                         <span class="optionsbeforesearchinput"><span class="input-label">Geographic filter: </span><input type="radio" id="provenance" name="geo-filter" tabindex="-1" value="provenance" class="radio" checked> <label for="provenance" class="radiolabel"><span title="Attestations in sources found in the certain region">Provenance:</span></label>
@@ -228,7 +252,7 @@
                         <input type="submit" value="Clear" title="Clear the filter">
                     </form>
                 </div>
-                
+
                 <div class="spellings">
                     <div class="spelling" id="243269633">
                         <h4><img src="./spelling/img/243269633.png" alt="p:t H wn:n n:f"></h4> <ol start="1">
@@ -298,7 +322,11 @@
         <div class="footer">
             <span class="footer-text">
                 Copyright 2017 Alexander Ilin-Tomich
-                <br>Licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" title="Creative Commons Attribution-ShareAlike 4.0 International">CC BY-SA 4.0</a> except the following logotypes<br></span><span><a href="https://uni-mainz.de/"><img src="JGU-Logo_farbe_med.svg" alt="Johannes Gutenberg University Mainz" title="Johannes Gutenberg University Mainz" onload="javascript:if(/constructor/i.test(window.HTMLElement)){this.src='JGU-Logo_farbe_med.png';}/*Show png in old Safari browsers, as these cannot handle SVG in img*/" onerror="this.src='JGU-Logo_farbe_med.png'"></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.fritz-thyssen-stiftung.de"><img src="Logo_Fritz_Thyssen_Stiftung.svg" alt="Fritz Thyssen Foundation" title="Fritz Thyssen Foundation" onload="javascript:if(/constructor/i.test(window.HTMLElement)){this.src='Logo_Fritz_Thyssen_Stiftung.png';}" onerror="this.src='Logo_Fritz_Thyssen_Stiftung.png'"></a></span>
+                <br>Licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" title="Creative Commons Attribution-ShareAlike 4.0 International">CC BY-SA 4.0</a> except the following logotypes<br></span><span><a href="https://uni-mainz.de/"><img src="JGU-Logo_farbe_med.svg" alt="Johannes Gutenberg University Mainz" title="Johannes Gutenberg University Mainz" onload="javascript:if (/constructor/i.test(window.HTMLElement)) {
+                            this.src = 'JGU-Logo_farbe_med.png';
+                        }/*Show png in old Safari browsers, as these cannot handle SVG in img*/" onerror="this.src='JGU-Logo_farbe_med.png'"></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.fritz-thyssen-stiftung.de"><img src="Logo_Fritz_Thyssen_Stiftung.svg" alt="Fritz Thyssen Foundation" title="Fritz Thyssen Foundation" onload="javascript:if (/constructor/i.test(window.HTMLElement)) {
+                                    this.src = 'Logo_Fritz_Thyssen_Stiftung.png';
+                                }" onerror="this.src='Logo_Fritz_Thyssen_Stiftung.png'"></a></span>
         </div>
     </body>
 </html>

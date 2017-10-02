@@ -8,6 +8,7 @@ Mockup: [about.html](mockup/about.html) / <https://ailintom.github.io/mockup/abo
 2) Das Formular für Durchsuchen der Personennamen und Anzeige der Suchergebnisse, bzw. der gesamten Datenmenge (die Startseite des Projekts)    
 Mockup: [index.html](mockup/index.html) / <https://ailintom.github.io/mockup/index.html>
 Die insgesamt 4000-10000 Einträge werden in Portionen à 50 Datensatze gezeigt. 
+Als Ergebnisse werden unterschiedliche Namen gezeigt. Die stereotypen Datensätze dienen nur zum Beispiel. 
 
 3) Ein Template für die Anzeige eines einzelnen Datensatzes aus der Tabelle personal_names (mit zugeordneten Schreibvarianten und Personenbelegen) 
 Alle Belege des Namens (maximal bis zu 423, durchschnittlich 5) werden auf einer Seite gezeigt, ohne Teilung.  
@@ -45,6 +46,7 @@ Mockup: [types.html](mockup/types.html) / <https://ailintom.github.io/mockup/typ
 
 12) Ein Template für die Anzeige eines einzelnen Datensatzes aus der Tabelle Namentypen Personennamens (mit zugeordneten Personennamen)  
 Mockup: [type.html](mockup/type.html) / <https://ailintom.github.io/mockup/type.html>
+Als Ergebnisse werden unterschiedliche Namen gezeigt. Die stereotypen Datensätze dienen nur zum Beispiel. 
 
 13) Das Formular für Durchschauen der Orte 
 Alle Orte (insgesamt 200) werden in Portionen à 50 Datensatze gezeigt.  
