@@ -6,10 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css.css" rel="stylesheet" type="text/css" >
         <link href="datalist-polyfill-style.css" rel="stylesheet" type="text/css" >
-
     </head>
     <body>
-
         <div id="wrapper">
             <div id="stable_url">
                 <form id="stable_url_form"><label for="version">Version:&nbsp;</label><select id="version">
@@ -20,7 +18,6 @@
             </div>
             <div class="header">
                 <h1><span class="red">P</span>ersons and <span class="red">N</span>ames of the <span class="red">M</span>iddle Kingdom</h1>
-
             </div>
             <div class="menu">
                 <ul>
@@ -36,7 +33,6 @@
                     <li><a href=impressum.html>Impressum</a></li>
                 </ul>
             </div>
-
             <div class="column">
                 <h2>Search people</h2>
                 <h3>Search terms</h3>
@@ -44,21 +40,16 @@
                     <div class="full-width-field-block">
                         <span class="input-label"><i>You can use % or * as wildcards. "nfr*" will match nfr.wj or nfr-ḥtp. "*nfr* will also match snfr.wj"</i><br></span>
                     </div><div class="half-width-field-block person-A">
-
                         <h4>Person A</h4>
                         <span class="input-label">Gender: </span><input type="radio" id="Aany" name="Agender" tabindex="-1" value="any" class="radio" checked> <label for="Aany" class="radiolabel"><span title="Match names regardless of gender">any</span></label>
                         <input type="radio" id="Afemale" name="Agender" tabindex="-1" value="female" class="radio"> <label for="Afemale" class="radiolabel"><span title="Match names borne only by women" class="gender">f</span></label>
                         <input type="radio" id="Amale" name="Agender" tabindex="-1" value="male"  class="radio"> <label for="Amale" class="radiolabel"><span title="Match names borne only by men" class="gender">m</span></label><br>
-
                         <label for="Atitle" class="input-label">Title:</label>
                         <span class="searchinput"><input type="text" name="Atitle" id="Atitle" value="" placeholder="MdC (jmj-rA pr) or Unicode (jmj-rꜣ pr)"></span>
-
                         <label for="personal_nameA" class="input-label">Name:</label>
                         <span class="searchinput"><input type="text" name="personal_nameA" id="personal_nameA" value="" placeholder="MdC (ra-Htp) or Unicode (rꜥ-ḥtp)"></span>
-
                             <label for="Aname-type-formal" class="input-label"><span >Name pattern:</span></label> <span class="searchinput"><input type="text" id="Aname-type-formal" name="Aname-type-formal" title="" placeholder="Example: DN (m)+ḥtp.w" list="name-types-formal" ></span>     
                             <label for="Aname-type-sematic" class="input-label"><span >Semantic class:</span></label> <span class="searchinput"><input type="text" id="Aname-type-sematic" name="Aname-type-sematic" title="" placeholder="Example: theophoric names" list="name-types-semantic" ></span>      
-
                             <datalist id="name-types-formal">
                                 <!--[if lte IE 9]><select data-datalist="periods"><![endif]-->
                                 <option value="N-ꜥnḫ">N-ꜥnḫ</option>
@@ -85,7 +76,6 @@
                                     <!--[if lte IE 9]></select><![endif]-->
                             </datalist>
                         
-
                     </div><div class="half-width-field-block person-B">
                         <h4>Person B</h4>
                         <span class="input-label">Gender: </span><input type="radio" id="Bany" name="Bgender" tabindex="-1" value="any" class="radio" checked> <label for="Bany" class="radiolabel"><span title="Match names regardless of gender">any</span></label>
@@ -97,7 +87,6 @@
                         <span class="searchinput"><input type="text" name="Bpersonal_name" id="Bpersonal_name" value="" placeholder="MdC (ra-Htp) or Unicode (rꜥ-ḥtp)"></span>
                         <label for="Bname-type-formal" class="input-label"><span >Name pattern:</span></label> <span class="searchinput"><input type="text" id="Bname-type-formal" name="Bname-type-formal" title="" placeholder="Example: DN (m)+ḥtp.w" list="name-types-formal" ></span>     
                         <label for="Bname-type-sematic" class="input-label"><span >Semantic class:</span></label> <span class="searchinput"><input type="text" id="Bname-type-sematic" name="Bname-type-sematic" title="" placeholder="Example: theophoric names" list="name-types-semantic" ></span>      
-
                     </div>
                     <div class="full-width-field-block">
                         <label for="relation" class="input-label">Relation between A and B:&nbsp;</label>
@@ -108,9 +97,7 @@
                             <option value="spouses" >A and B are spouses</option>
                             <option value="siblings" >A and B are siblings</option>
                         </select>
-
                     </div>
-
                     <span class="optionsbeforesearchinput"><span class="input-label">Geographic filter: </span><input type="radio" id="provenance" name="geo-filter" tabindex="-1" value="provenance" class="radio" checked> <label for="provenance" class="radiolabel"><span title="Attestations in sources found in the certain region">Provenance:</span></label>
                         <input type="radio" id="installation-place" name="geo-filter" tabindex="-1" value="installation-place" class="radio"> <label for="installation-place" class="radiolabel"><span title="Attestations on monuments installed in certain region">Installation place</span></label>
                         <input type="radio" id="origin" name="geo-filter" tabindex="-1" value="origin" class="radio"> <label for="origin" class="radiolabel"><span title="Attestations on monuments owned by people from a certain region">Origin</span></label>
@@ -119,7 +106,6 @@
                     <label for="place" class="input-label"><span>&nbsp;</span></label> <span class="searchinput"><input type="text" id="place" name="place" list="places" title="Enter the region" placeholder="Region or locality"></span> 
                     <datalist id="places">
                         <!--[if lte IE 9]><select data-datalist="places"><![endif]-->
-
                         <option value="Elephantine">
                         <option value="Aswan">
                         <option value="Qubbet el-Hawa">
@@ -236,14 +222,11 @@
                         <option value="Tell el-Faraʿin">
                             <!--[if lte IE 9]></select><![endif]-->
                     </datalist> 
-
                     <span class="optionsbeforesearchinput"><span class="input-label">Chronological filter: </span><input type="radio" id="during" name="chrono-filter" tabindex="-1" value="during" class="radio" checked> <label for="during" class="radiolabel"><span title="Attestations in sources beloging to a certain period">During</span></label>
                         <input type="radio" id="not-later" name="chrono-filter" tabindex="-1" value="not-later" class="radio"> <label for="not-later" class="radiolabel"><span title="Attestations in sources dating not (demonstrably) later than">Not later than</span></label>
                         <input type="radio" id="not-earlier" name="chrono-filter" tabindex="-1" value="not-earlier" class="radio"> <label for="not-earlier" class="radiolabel"><span title="Attestations in sources dating not (demonstrably) earlier than">Not earlier than</span></label>
-
                     </span>
                     <label for="period" class="input-label"><span >the period&nbsp;</span></label> <span class="searchinput"><input type="text" id="period" name="period" list="periods" title="Enter the period" placeholder="Period or reign"></span> 
-
                     <datalist id="periods">
                         <!--[if lte IE 9]><select data-datalist="periods"><![endif]-->
                         <option value="12th Dyn.">
@@ -288,18 +271,13 @@
                             <!--[if lte IE 9]></select><![endif]-->
                     </datalist>
                     <input type="checkbox" id="only_persons" name="only_persons" tabindex="-1" value="true" class="radio"> <label for="only_persons" ><span title="Only show dossiers of persons with multiple attestations">Only dossiers of persons with multiple attestations</span></label>
-
                     <script src="datalist.polyfill.min.js"></script>
                     <br>
                     <input type="submit" value="Search" title="Display personal names matching the search terms">
                     <input type="submit" value="Clear" title="Clear search terms and display all records">
-
                 </form>
-
             </div>
             <div class="main">
-
-
                 <h3>Search results</h3>
                 <div class="controls">
                     Displaying people 1&ndash;4 out of totally 4<br>
@@ -330,7 +308,6 @@
                             <td><a href="./attestation/67131355.html">MFR (origin)</a></td>
                         </tr>
         
-
                         <tr>
                             <td class="gender person-A"  title="male"><a href="./person/67112920">m</a></td>
                             <td class="tit person-A"><a href="./person/67112920">ḫtm.w-bj.tj; jm.j-rꜣ gs-pr</a></td>
@@ -364,7 +341,6 @@
                             <td><a href="./attestation/33554888">13th Dyn.</a></td>
                             <td><a href="./attestation/33554888">Thebes (origin)</a></td>
                         </tr>
-
                     </table>
                 </div>
                 <div class="controls">
@@ -372,7 +348,6 @@
                     <a href="./index.php?...&amp;startat=1">First</a>&nbsp;<a href="./index.php?...&amp;startat=1">Prev 50</a>&nbsp;<a href="./index.php?...&amp;startat=n-61">Next 50</a>&nbsp;<a href="./index.php?...&amp;startat=141">Last</a> 
                 </div>
             </div>
-
             <div id="push"></div></div>        
         <div class="footer">
             <span class="footer-text">

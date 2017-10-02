@@ -8,13 +8,11 @@
  :link { color: #0000EE; }
 :visited { color: #551A8B; }
 #stable_url{
-
     top: 0.3em;
     right: 0.3em;
     text-align: right;
     float:right;
 }
-
 #stable_url, #stable_url *{
     font-size:90%;
 }
@@ -41,7 +39,6 @@ input, textarea, select{
     font-family:Roboto, DejaVu Sans, sans-serif;
     font-size:medium;
 }
-
 #wrapper {
     min-height: 100%;
     margin: 0 auto -8em;
@@ -51,7 +48,6 @@ input, textarea, select{
     padding: 6px;
     margin-top: 0pt;
     margin-bottom: 0pt;
-
     clear:left;
 }
 #push{
@@ -62,16 +58,13 @@ input, textarea, select{
     height: 8em;    
     overflow:auto;
     text-align: center;
-
 }
-
 .footer span {white-space:nowrap;}
 .footer-text {font-size:80%;}
 .footer img{
     padding-top: 0.5em;
     height: 5em;
 }
-
 h1{
     margin-top: 0ex;
     margin-bottom: 0.75ex;
@@ -93,7 +86,6 @@ h4{
 }
 h4 img, .spelling-attestation img{
     height: 1.75em;
-
 }
 h5{
     font-size:1.05em;
@@ -111,7 +103,6 @@ h5{
 }
 .bonds{
     list-style-type: none;
-
 }
 .children{
     list-style-type: none;
@@ -122,7 +113,10 @@ h5{
 .attestations h5{
     font-size:110%;
 }
-
+.input-label, .optionsbeforesearchinput{
+        padding-bottom:0.25ex;
+    padding-top:0.25ex;
+}
 .searchinput {
     display: block;
     overflow: hidden;
@@ -134,7 +128,6 @@ h5{
 .searchinput input{
     width: 100%;
     display:inline-block;
-
     min-width:6em;
 }
 .half-width-field-block{
@@ -145,7 +138,6 @@ h5{
 }
 .full-width-field-block{
     display:inline-block;
-
     min-width:11em;
     width:100%;
     overflow:auto;
@@ -153,7 +145,6 @@ h5{
 .half-width-field-block input[type=text]{
     min-width:4em;
 }
-
 .half-width-field-block.person-A, .half-width-field-block.person-B{
     outline:3px solid white;
     padding: 6px;
@@ -172,20 +163,15 @@ h5{
     margin: 0;
     padding-left:0.3em;
 }
-
 .short-field-block{
-
     max-width: 19em;
-
 }
 .short-field-block input[type=text]{
     min-width:6em;
 }
-
 .length input{
     min-width:1em !important;
 }
-
 .optionsbeforesearchinput {
     float: left;
     padding-right: 1ex;
@@ -193,7 +179,6 @@ h5{
 .input-label{
     float: left;
     padding-left:0.3em;
-
 }
 .search-options{
     width:100%;
@@ -204,15 +189,12 @@ h5{
 }
 .search-options-item50{
     display: inline-block;
-
     width:50%;
 }
 .controls{
     width:100%;
     padding-bottom: 0.5em;
-
 }
-
 .radiolabel {
     color: grey;
 }
@@ -223,7 +205,6 @@ h5{
     font-style: italic;
     text-align: center;
 }
-
 .pn{
     white-space: nowrap;
 }
@@ -250,12 +231,10 @@ h5{
 .descending{
     background: url(./third-party-media/tablesorter/desc.gif); 
 }
-
 .tab table tr td, .tab table th td{
     padding-left: 0.5em;
     padding-right: 0.5em;
 }
-
 .no-att{
     text-align: center;
 }
@@ -282,7 +261,6 @@ h5{
 .attestation a:visited, .attestation a:active, .attestation a:hover{
     color:#0000EE;
 }
-
 .title-attribute{
     /* title of a property displayed on a page*/
 }
@@ -293,7 +271,6 @@ h5{
 .biblio-ref-no-author-date a:link{
      text-decoration:underline;    
      color: #0000EE; 
-
 }
 .biblio-ref-no-author-date a:visited { color: #551A8B; }
 .period{
@@ -336,7 +313,6 @@ h5{
 .csl-entry a:visited{
     color: black;
 }
-
 .filter{
     background-color: #f3f3f3;
     clear:both;
@@ -384,4 +360,3 @@ h5{
     font-weight: normal;
     font-style: normal;
 }
-

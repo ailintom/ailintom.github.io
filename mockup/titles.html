@@ -6,10 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css.css" rel="stylesheet" type="text/css" >
         <link href="datalist-polyfill-style.css" rel="stylesheet" type="text/css" >
-
     </head>
     <body>
-
         <div id="wrapper">
             <div id="stable_url">
                 <form id="stable_url_form"><label for="version">Version:&nbsp;</label><select id="version">
@@ -20,7 +18,6 @@
             </div>
             <div class="header">
                 <h1><span class="red">P</span>ersons and <span class="red">N</span>ames of the <span class="red">M</span>iddle Kingdom</h1>
-
             </div>
             <div class="menu">
                 <ul>
@@ -36,15 +33,12 @@
                     <li><a href=impressum.html>Impressum</a></li>
                 </ul>
             </div>
-
             <div class="column">
                 <h2>Search titles</h2>
                 <h3>Search terms</h3>
                 <form action="/titles.php" method="get">
-
                     <label for="title" class="input-label">Title</label>
                     <span class="searchinput"><input type="text" name="title" id="title" value="" placeholder="MdC (jmj-rA pr) or Unicode (jmj-rꜣ pr)"></span>
-
                     <label for="translation"  class="input-label">Translation:</label>
                     <span class="searchinput"><input type="text" name="personal_name" id="translation" value="" placeholder="English translation"></span>
                     <div class="search-options">
@@ -52,7 +46,6 @@
                             <div class="search-options-item">
                                 <span class="input-label">Return the titles</span>
                             </div>
-
                             <div class="search-options-item">
                                 <input type="radio" id="inexact" name="match" tabindex="-1" value="inexact" class="radio" checked> <label for="inexact" class="radiolabel"><span title="Match any title containing the search term">containing</span></label>
                                 <input type="radio" id="exact" name="match" tabindex="-1" value="exact" class="radio"> <label for="exact" class="radiolabel"><span title="Match any title equal to the search term ">equalling</span></label>
@@ -63,7 +56,6 @@
                                     <input type="radio" id="region-attested" name="match-region" tabindex="-1" value="region-attested" class="radio"> <label for="region-attested" class="radiolabel"><span title="Match any title equal to the search term "> characteristic of</span></label></span><label for="place" class="input-label"><span >the region&nbsp;</span></label> <span class="searchinput"><input type="text" id="place" name="place" list="places" title="Enter the region" placeholder="Region or locality"></span> 
                                 <datalist id="places">
                                     <!--[if lte IE 9]><select data-datalist="places"><![endif]-->
-
                                     <option value="Elephantine">
                                     <option value="Aswan">
                                     <option value="Qubbet el-Hawa">
@@ -180,10 +172,8 @@
                                     <option value="Tell el-Faraʿin">
                                         <!--[if lte IE 9]></select><![endif]-->
                                 </datalist>
-
                                 <span class="optionsbeforesearchinput"><input type="radio" id="period-characteristic" name="match-date" tabindex="-1" value="period-characteristic" class="radio" checked> <label for="period-characteristic" class="radiolabel"><span title="Match any title containing the search term">attested in</span></label>
                                     <input type="radio" id="period-attested" name="match-date" tabindex="-1" value="period-attested" class="radio"> <label for="period-attested" class="radiolabel"><span title="Match any title equal to the search term ">only attested in</span></label></span><label for="period" class="input-label"><span >the period&nbsp;</span></label> <span class="searchinput"><input type="text" id="period" name="period" list="periods" title="Enter the period" placeholder="Period or reign"></span> 
-
                                 <datalist id="periods">
                                     <!--[if lte IE 9]><select data-datalist="periods"><![endif]-->
                                     <option value="12th Dyn.">
@@ -231,27 +221,20 @@
                                 <input type="radio" id="female" name="gender" tabindex="-1" value="female" class="radio"> <label for="female" class="radiolabel"><span title="Match titles borne only by women">female titles</span></label>
                                 <input type="radio" id="male" name="gender" tabindex="-1" value="male"  class="radio"> <label for="male" class="radiolabel"><span title="Match titles borne only by men ">male titles</span></label>
                                 <input type="radio" id="both" name="gender" tabindex="-1" value="both"  class="radio"> <label for="both" class="radiolabel"><span title="Match titles borne by both men and women">unisex titles</span></label>
-
                             </div>
                         </div>
                     </div>
-
                     <div class="short-field-block">
                         <label for="ward" class="input-label"><span >Ward/Fischer number:</span></label> <span class="searchinput"><input type="text" id="ward" name="ward" title="Enter the entry number in Ward, Index of Egyptian Administrative and Religious Titles of the Middle Kingdom, or Fischer, Egyptian Titles of the Middle Kingdom. A Supplement to Wm. Ward's Index" placeholder="Example: 1346"></span>
                         <label for="hannig" class="input-label"><span>Hannig number:</span></label> <span class="searchinput"><input type="text" id="hannig" name="hannig" title="Enter the entry number Hannig, Ägyptisches Wörterbuch II: Mittleres Reich und Zweite Zwischenzeit" placeholder="Example: 2044"></span>       
                     </div>
-
                     <script src="datalist.polyfill.min.js"></script>
                     <br>
                     <input type="submit" value="Search" title="Display personal names matching the search terms">
                     <input type="submit" value="Clear" title="Clear search terms and display all records">
-
                 </form>
-
             </div>
             <div class="main">
-
-
                 <h3>Search results</h3>
                                                 <div class="controls">
                     Displaying titles 101&ndash;150 out of totally 150<br>
@@ -309,8 +292,6 @@
                             <td><a href="./title/41943045">30148</a></td>
                             <td><a href="./title/41943045">scribe of the town</a></td>
                         </tr>
-
-
                     </table>
                 </div>
                                                 <div class="controls">
@@ -318,7 +299,6 @@
                     <a href="./index.php?...&amp;startat=1">First</a>&nbsp;<a href="./index.php?...&amp;startat=1">Prev 50</a>&nbsp;<a href="./index.php?...&amp;startat=n-61">Next 50</a>&nbsp;<a href="./index.php?...&amp;startat=141">Last</a> 
                 </div>
             </div>
-
             <div id="push"></div></div>        
         <div class="footer">
             <span class="footer-text">

@@ -1,13 +1,10 @@
 .menu {
-
     border: none ;
     padding: 3px;
-
 }
 .column {
     /*width: 83%;
     float: left;*/
-
     padding: 3px;
     /* border: none;*/
 }
@@ -16,7 +13,6 @@
     padding: 6px;
     clear: left;
 }
-
 /* Make the table with results part of the right column (right of the menu) if the window is wide enough. Otherwise it is placed under the menu. */
 @media only screen and (min-width: 1000px) {
     .main { 
@@ -29,9 +25,11 @@
     }
     .search-options-group{
         display: table-row;
+        vertical-align: top;
     }
     .search-options-item{
         display: table-cell;
+         vertical-align: top;
     }
 }
 @media only screen and (max-width: 1000px) {
@@ -50,9 +48,7 @@
     }    
     .menu a { display: block } 
     .menu   li {
-
         line-height:140%;
-
     }
     .menu ul li:nth-child(1) a{
         padding-top:0.5ex; 
@@ -94,7 +90,6 @@
     }
     .column{
         width:100%;
-
     }
     .page-navigation{
         margin-bottom:0.5em;
@@ -110,13 +105,10 @@
 .menu   li {
     background-color:#f0f0f0;
     line-height:140%;
-
 }
 .menu a {
     margin-left: 0.5ex;
     margin-right: 0.5ex;}
-
-
 .menu a:link {color: black;text-decoration: none;}     
 .menu a:visited {color: black}   
 .menu a:hover {color: black;text-decoration: underline;}      

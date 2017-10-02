@@ -11,11 +11,9 @@
 	max-height: 300px;
 	overflow-y: auto;
 }
-
 .datalist-polyfill:empty {
 	display: none !important;
 }
-
     .datalist-polyfill > li {
         padding: 3px;
         font: 13px "Lucida Grande", Sans-Serif;
