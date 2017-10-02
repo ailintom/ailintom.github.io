@@ -113,7 +113,7 @@ h5{
 .attestations h5{
     font-size:110%;
 }
-.input-label, .optionsbeforesearchinput{
+.input-label, .optionsbeforesearchinput, .radiogroup{
         padding-bottom:0.25ex;
     padding-top:0.25ex;
 }
