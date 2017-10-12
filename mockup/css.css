@@ -261,9 +261,8 @@ h5{
 .attestation a:visited, .attestation a:active, .attestation a:hover{
     color:#0000EE;
 }
-.title-attribute{
-    /* title of a property displayed on a page*/
-}
+
+
 .biblio-ref-no-author-date{
     /* reference to a something that is not included in the bibliography (for example, other online databases)*/
     
@@ -288,9 +287,20 @@ h5{
 .translation{
     /*translation of a name or a title*/
 }
+.spelling{
+    /* the spellin section on the name page*/
+}
 .page-navigation{
     padding: 0.5em;
     border: 1px solid lightgray;
+}
+.page-navigation a:link{
+    text-decoration:none; 
+    color: #0000EE; 
+}
+.page-navigation a:visited{
+    text-decoration:none; 
+    color: #0000EE; 
 }
 .page-navigation a img{
     height: 1.25em;
@@ -317,8 +327,24 @@ h5{
     background-color: #f3f3f3;
     clear:both;
 }
+.latitude{
+    /* geographical latitude*/
+}
 .title-attribute{
+    /* title of a property displayed on a page*/
     font-weight: bold;
+}
+.title-attribute-second-order{
+    /* subordinate propety titles (listed after a title-attribute)*/
+}
+.li-attribute{
+    /* title of a property displayed in the list of attestations of a name */
+}
+.region-note{
+    /* the reasoning behind the geographical attribution or other supplementary information*/
+}
+.date-note{
+    /* the reasoning behind the dating or other supplementary information*/
 }
 @font-face {
     font-family: 'Roboto';
